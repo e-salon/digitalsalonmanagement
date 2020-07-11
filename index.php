@@ -3,7 +3,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Digital Salon-Homepage</title>
+        <title>Digital Salon:Homepage</title>
         <link rel="stylesheet" href="pages/.css/styles.css" >
     </head>
     <body>
