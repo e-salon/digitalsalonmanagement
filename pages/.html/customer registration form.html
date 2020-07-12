@@ -24,39 +24,48 @@
            <center>
              <div> 
 
-              <h1> Create your Nisuke account.Experience new way locate and book the best hairdressers in town. </h1>
+                 <h1> Create your Nisuke account<br>
+                     Experience a new beautiful way to locate and book the best hairdressers in town </h1>
                
                <form action="../.php/customerinfo.php" method="post">
 
-                <label> <b> First name: </b> <input type="text" name="firstName" value=""> </label>
+                   <label class="requiredLabel"> <b> First name<span><sup style="color: red">*</sup></span>: </b>
+                       <input type="text" name="firstName" value=""> </label>
 
                 <br><br>
 
-                <label> <b> Last name: </b> <input type="text" name="lastName" value=""> </label>
+                <label class="requiredLabel"> <b> Last name<span><sup style="color: red">*</sup></span>: </b>
+                          <input type="text" name="lastName" value=""> </label>
            
                 <br><br>
             
-                <label> <b> Mobile Number: </b> <input type="tel" name="mobileNumber" value=""> </label>
+                <label> <b> Mobile Number<span><sup style="color: red">*</sup></span>: </b>
+                            <input type="tel" name="mobileNumber" value=""> </label>
 
                 <br><br>
             
-                <label> <b> Email: </b> <input type="text"  name="email" value=""> </label>
+                <label> <b> Email<span><sup style="color: red">*</sup></span>: </b>
+                            <input type="text"  name="email" value=""> </label>
 
                 <br><br>
 
-                <label> <b> Age:</b> <input type="number" name="age"> </label>
+                <label> <b> Age <span><sup style="color: red">*</sup></span>: </b>
+                            <input type="number" name="age"> </label>
 
                 <br><br>
             
-                <label> <b> Password: </b> <input type="Password" name="password" value=""> </label>
+                <label> <b> Password<span><sup style="color: red">*</sup></span>: </b>
+                        <input type="Password" name="password" value=""> </label>
 
                 <br><br>
        
-                <b> SEX:: </b> <label>  <input type="radio" > <b> Male </b> </label>
-                            <label>  <input type="radio"> <b> Female </b> </label>
+                <b> SEX<span><sup style="color: red">*</sup></span>: </b>
+                       <label>  <input type="radio" > <b> Male </b> </label>
+                       <label>  <input type="radio"> <b> Female </b> </label>
        
                 <br><br>         
-                <b> Occupation</b><select name="Occupation" >
+                <b> Occupation <span><sup style="color: red">*</sup></span>: </b>
+                                  <select name="Occupation" >
                                   <option value="student" >student</option>
                                   <option value="Teacher" selected> Teacher</option>
                                   <option value="Lawyer"> Lawyer</option>
@@ -70,15 +79,16 @@
       
                 <br><br>
                 
-                <label> <b> Birth date: </b> <input type="date"> </label>
+                <label> <b> Birth date<span><sup style="color: red">*</sup></span>: </b>
+                                      <input type="date"> </label>
        
                 <br><br>
 
-                <label> <b> Submit Button: </b> <input type="submit"> </label>
+                <label> <b> Create my account: </b> <input type="submit"> </label>
 
                 <br><br>
 
-                <label> <b> Reset Button: </b> <input type="reset"> </label>
+                <label> <b> Reset all the values: </b> <input type="reset"> </label>
            
             </form>
         
