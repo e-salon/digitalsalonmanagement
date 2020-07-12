@@ -24,69 +24,57 @@
            <center>
            <div> 
 
-               <h1 class="heading"> Salon Manager Registration Form </h1>
+            <h1 class="heading"> Salon Manager Registration Form </h1>
+            
+            <aside>sections marked with <span><sup style="color: red">*</sup></span> are required </aside>
                
-            <form>
+            <form name="salon manager registration form" action="../.php/bossRegistration"
+                  onsubmit="" method="post">
 
-            <label style="text-align: left;"> <b> First name: </b> <input type="text"> </label>
-
-            <br><br>
-
-            <label style="text-align: left;"> <b> Last name: </b> <input type="text"> </label>
-           
-            <br><br>
-
-            <label style="text-align: center;"> <b> Age:</b> <input type="number"> </label>
+            <label> <b> First name <span><sup style="color: red">*</sup></span>: </b>
+                <input type="text" name="firstName" value="" required=""> </label>
 
             <br><br>
 
-            <label style="text-align: center;"> <b> Mobile Nunber: </b> <input type="number"> </label> 
+            <label> <b> Last name <span><sup style="color: red">*</sup></span>: </b>
+                <input type="text" name="lastName" value="" required=""> </label>
+            
+            <br><br>
+
+            <label> <b> Mobile Number <span><sup style="color: red">*</sup></span>: </b> 
+                <input type="tel" name="mobileNumber" value="" required=""> </label> 
 
             <br><br>
 
-            <label> <b> Email: </b> <input type="text"> </label>
+            <label> <b> Email: </b> <input type="text" name="email" value=""> </label>
 
-                <br><br>
+            <br><br>            
 
-            <label> <b> Password: </b> <input type="Password"> </label>
+            <label> <b> Age:</b> <input type="number" name="age" value=""> </label>
 
-                <br><br>
+            <br><br>
+
+            <label> <b> Password<span id="asterisk">*</span>: </b>
+                <input type="password" name="password" value="" required=""> </label>
+
+            <br><br>
        
-               <b> SEX:: </b> <label>  <input type="radio"> <b> Male </b> </label>
-                             <label>  <input type="radio"> <b> Female </b> </label>
+            <b> SEX<span><sup style="color: red">*</sup></span>:: </b> <label>  
+                         <input type="radio" name="male" value="" required> <b> Male </b> </label>
+            <label>  <input type="radio" name="female" value="" required=""> <b> Female </b> </label>
        
-                <br><br>
+            <br><br>
 
-          <!-- <b> Occupation </b> <input type="checkbox"> <b>I am a student</b>
-                              <input type="checkbox"> <b>I am a business person</b>
-                             <b> Occupation </b> <select name="Occupation" >
-                                  <option value="student" >student</option>
-                                  <option value="Teacher" selected> Teacher</option>
-                                  <option value="Lawyer"> Lawyer</option>
-                                  <option value="Doctor"> Doctor</option>
-                                  <option value="Cooker"> Cooker</option>
-                                  <option value="Hair stylish"> Hair Stylish</option>
-                                  <option value="Business person">Business person</option>
-                                  <option value="Accountant">Accountant</option>
-                                  <option value="Driver">Driver</option>
-
-
-
-
-
-                              </select>
-      
-                 <br><br>-->
-
-            <label> <b> Birth date: </b> <input type="date"> </label>
+            <label> <b> Birth date <span><sup style="color: red">*</sup></span>: </b> 
+                <input type="date" name="date" value="" required=""> </label>
        
-                 <br><br>
+            <br><br>
 
-            <label> <b> Submit Button: </b> <input type="submit"> </label>
+            <label> <b> You are all set </b> <input type="submit" value="Create an account"> </label>
 
-                  <br><br>
+            <br><br>
 
-            <label> <b> Reset Button: </b> <input type="reset"> </label>
+            <label> <b> Filled in incorrect details? </b> <input type="reset" value="Reset"> </label>
            
             </form>
         

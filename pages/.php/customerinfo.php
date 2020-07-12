@@ -1,11 +1,5 @@
 <?php
 
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 $servername = "localhost";
 $username = "root";
 $password = "";
@@ -27,15 +21,15 @@ VALUES ('".$_POST['firstName']."', '".$_POST['lastName']."', '".$_POST['mobileNu
         . "'".$_POST['age']."', '".$_POST['password']."')";
 
 if ($conn->query($sql) === TRUE) {
-  echo "New record created successfully";
+  echo "New record created successfully<br>";
 } 
 else {
   echo "Error: " . $sql . "<br>" . $conn->error;
 }
 
 
-$say = htmlspecialchars($_POST['firstName']);
-echo $say;
+/*$say = htmlspecialchars($_POST['firstName']);
+echo 'Your first name entered is '.$say ; */
 
 // sql to create table
 /*$sql = "CREATE TABLE MtejaData(

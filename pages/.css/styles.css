@@ -2,5 +2,24 @@
 
 
 html{
-    background-color:ghostwhite;
+    background-color:darkgrey;
     }
+    .heading{
+        color: maroon;
+        background-color: green;
+    }
+    #asterisk{
+        color: red;
+    }
+    
+    #form{
+                   background-color: navy;    
+                   margin-top: 0pt;
+                   margin-right:20%;
+                   margin-bottom: 0px;
+                   margin-left: 20%;
+          }
+          
+          .asterisk{
+              color: red;
+          }

@@ -6,19 +6,27 @@
        
         <link rel="stylesheet" href="../.css/styles.css" >
         
-      
+        <style>
+             div {
+                    background-color: navy;
+                    margin-top: 0pt;
+                    margin-right:20%;
+                    margin-bottom: 0px;
+                     margin-left: 20%;
+                 }
+
+        </style>
+        
     </head>
 
     
-    <body>
+       <body>
            <center>
-               <div id="form"> 
+             <div> 
 
-                 <h1 class="heading"> Create your Nisuke account<br>
+                 <h1> Create your Nisuke account<br>
                      Experience a new beautiful way to locate and book the best hairdressers in town </h1>
-                 
-                 <aside>sections marked with <span><sup style="color: red">*</sup></span> are required </aside> 
-                 
+                 <aside>sections marked with <span><sup style="color: red">*</sup></span> are required </aside>           
                <form name="customer registration form" action="../.php/customerinfo.php"
                      onsubmit="return validateForm()" method="post">
     
@@ -58,7 +66,7 @@
                 <br><br>         
                 <b> Occupation: </b><select name="Occupation" >
                                   <option value="student" >student</option>
-                                  <option value="Teacher" selected> Teacher</option>
+                                  <option value="Teacher" selected="selected"> Teacher</option>
                                   <option value="Lawyer"> Lawyer</option>
                                   <option value="Doctor"> Doctor</option>
                                   <option value="Cooker"> Cooker</option>
@@ -75,16 +83,16 @@
        
                 <br><br>
 
-                <label> <b> You are all set </b> <input type="submit" value="Create an account"> </label>
+                <label> <b> Create my account: </b> <input type="submit" value="submit"> </label>
 
                 <br><br>
 
-                <label> <b> Filled incorrect details? </b> <input type="reset" value="Reset"> </label>
+                <label> <b> Reset all the values: </b> <input type="reset"> </label>
            
             </form>
         
            </div>
-         <p><b>Already have an account with us? <a href="customer sign-in form.html">Sign in here</a></b></p>
+         <p><b>Already have an with us? <a href="customer sign-in form.html">Sign in here</a></b></p>
        </center>
     </body>
 </html>

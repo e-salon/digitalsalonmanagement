@@ -5,41 +5,31 @@
 
         <link rel="stylesheet" href="../.css/styles.css" >
         
-        <style>
-           div {
-                   background-color: navy;    
-                   margin-top: 0pt;
-                   margin-right:20%;
-                   margin-bottom: 0px;
-                   margin-left: 20%;
-                }
-
-        </style>
-        
+            
     </head>
 
     
     <body>
         <center>
-          <div> 
+            <div id="form"> 
 
-            <h3> <u> Welcome again.Please sign in to proceed.</u> </h3>
+              <h3 class="heading"> Welcome again.Please sign in to manage your bookings </h3>
                
             <form action="" method="post">
             
-            <label > <b> Mobile Number: </b> <input type="tel" name="mobileNumber" value=""> </label> 
+                <label > <b> Mobile Number<span class="asterisk">*</span>: </b> <input type="tel" name="mobileNumber" value="" required=""> </label> 
 
             <br><br>
 
-            <label> <b> Password: </b> <input type="Password" name="password" value=""> </label>
+            <label> <b> Password<span class="asterisk">*</span>: </b> <input type="password" name="password" value="" required=""> </label>
 
             <br><br>   
               
-            <label> <b> Submit Button: </b> <input type="submit"> </label>
+            <label> <b> Confirm your details and </b> <input type="submit" value="Sign in"> </label>
 
             <br><br>
 
-            <label> <b> Reset Button: </b> <input type="reset"> </label>
+            <label> <b> Please <input type="reset" value="Reset"> If you entered incorrect details </b> </label>
            
             </form>
         
