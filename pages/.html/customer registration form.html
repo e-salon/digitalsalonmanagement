@@ -29,18 +29,18 @@
                
                <form action="../.php/customerinfo.php" method="post">
 
-                   <label class="requiredLabel"> <b> First name<span><sup style="color: red">*</sup></span>: </b>
-                       <input type="text" name="firstName" value=""> </label>
+                   <label> <b> First name<span><sup style="color: red">*</sup></span>: </b>
+                       <input type="text" name="firstName" value="" required=""> </label>
 
                 <br><br>
 
-                <label class="requiredLabel"> <b> Last name<span><sup style="color: red">*</sup></span>: </b>
-                          <input type="text" name="lastName" value=""> </label>
+                <label> <b> Last name<span><sup style="color: red">*</sup></span>: </b>
+                    <input type="text" name="lastName" value="" required=""> </label>
            
                 <br><br>
             
                 <label> <b> Mobile Number<span><sup style="color: red">*</sup></span>: </b>
-                            <input type="tel" name="mobileNumber" value=""> </label>
+                    <input type="tel" name="mobileNumber" value="" required=""> </label>
 
                 <br><br>
             
@@ -49,23 +49,22 @@
 
                 <br><br>
 
-                <label> <b> Age <span><sup style="color: red">*</sup></span>: </b>
+                <label> <b> Age: </b>
                             <input type="number" name="age"> </label>
 
                 <br><br>
             
                 <label> <b> Password<span><sup style="color: red">*</sup></span>: </b>
-                        <input type="Password" name="password" value=""> </label>
+                    <input type="Password" name="password" value="" > </label>
 
                 <br><br>
        
-                <b> SEX<span><sup style="color: red">*</sup></span>: </b>
+                <b> SEX::<span><sup style="color: red">*</sup></span>: </b>
                        <label>  <input type="radio" > <b> Male </b> </label>
                        <label>  <input type="radio"> <b> Female </b> </label>
        
                 <br><br>         
-                <b> Occupation <span><sup style="color: red">*</sup></span>: </b>
-                                  <select name="Occupation" >
+                <b> Occupation: </b><select name="Occupation" >
                                   <option value="student" >student</option>
                                   <option value="Teacher" selected> Teacher</option>
                                   <option value="Lawyer"> Lawyer</option>
@@ -80,7 +79,7 @@
                 <br><br>
                 
                 <label> <b> Birth date<span><sup style="color: red">*</sup></span>: </b>
-                                      <input type="date"> </label>
+                    <input type="date" required=""> </label>
        
                 <br><br>
 
