@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+    <head>
+        <title>Salon Manager Sign-in Form</title>
+
+        <link rel="stylesheet" href="../.css/styles.css" >
+        <script src="../.js/formValidation.js"></script>
+        
+            
+    </head>
+
+    
+    <body>
+        <center>
+            <div id="form"> 
+
+              <h3 class="heading"> Welcome again.Please sign in to manage your customer bookings </h3>
+              
+              <aside>sections marked with <span><sup style="color: red">*</sup></span> are required </aside> 
+               
+            <form name="salonManager"  action="" method="post" onsubmit="return validateform()" >
+            
+                <table >
+                    <tbody>
+                        <tr> <td> <b> Mobile Number<span class="asterisk">*</span>: </b> </td>
+                            <td> <input type="tel" name="mobileNumber" value="" onkeyup="validateform();"> </td> </tr>
+
+                        <tr> <td> <b> Password<span class="asterisk">*</span>: </b> </td>
+                            <td>  <input type="password" name="password" value="" > </td> </tr>
+              
+                        <tr> <td> <b> Confirm your details and </b> </td>
+                            <td> <input type="submit" value="Sign in"> </td> </tr>
+                        
+                        <tr> <td>  <b> Please <input type="reset" value="Reset"> 
+                                    If you entered incorrect details </b> </td> </tr>
+            </tbody>
+                </table>
+           
+            </form>
+        
+          </div>
+          <p><b>Forgot your password? <a href="bossPasswordRecovery.html">Recover it here</a></b></p>
+        </center>
+    </body>
+</html>
+   
+
+
+
+

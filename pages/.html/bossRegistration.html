@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+    <head>
+        <title>Salon Manager Registration Form</title>
+
+        <link rel="stylesheet" href="../.css/styles.css" >
+        
+        <style>
+          div {
+    background-color: navy;
+    
+    margin-top: 0pt;
+    margin-right:20%;
+    margin-bottom: 0px;
+    margin-left: 20%;
+    }
+
+        </style>
+        
+    </head>
+
+    
+       <body>
+           <center>
+           <div> 
+
+            <h1 class="heading"> Salon Manager Registration Form </h1>
+            
+            <aside>sections marked with <span><sup style="color: red">*</sup></span> are required </aside>
+               
+            <form name="salon manager registration form" action="../.php/bossRegistration"
+                  onsubmit="" method="post" >
+
+                <table>
+                    <tbody>
+                        <tr> <td> <b> First name <span><sup style="color: red">*</sup></span>: </b> </td>
+                            <td> <input type="text" name="firstName" value="" required=""> </td> </tr>
+
+                        <tr> <td> <b> Last name <span><sup style="color: red">*</sup></span>: </b> </td> 
+                            <td> <input type="text" name="lastName" value="" required=""> </td> </tr>         
+           
+
+                        <tr> <td> <b> Mobile Number <span><sup style="color: red">*</sup></span>: </b> </td>
+                            <td> <input type="tel" name="mobileNumber" value="" required=""> </td> </tr>
+
+                        <tr> <td> <b> Email: </b> </td>
+                            <td> <input type="text" name="email" value=""> </td> </tr>         
+
+                        <tr> <td> <b> Age:</b> </td>
+                            <td> <input type="number" name="age" value=""> </td> </tr>
+
+                        <tr> <td> <b> Password<span id="asterisk">*</span>: </b> </td>
+                            <td> <input type="password" name="password" value="" required=""> </td> </tr>
+
+                
+                        <tr>  <td> <b> SEX<span><sup style="color: red">*</sup></span>:: </b> </td>>  
+                            <td> <input type="radio" name="male" value="" required> <b> Male </b> 
+                              <input type="radio" name="female" value="" required=""> <b> Female </td> </tr>
+       
+                              <tr> <td> <b> Birth date <span><sup style="color: red">*</sup></span>: </b> </td>
+                                  <td>  <input type="date" name="date" value="" required=""> </td> </tr>
+      
+
+                              <tr> <td> <b> You are all set </b> </td>
+                                  <td> <input type="submit" value="Create an account"> </td> </tr>
+
+                              <tr> <td> <b> Filled in incorrect details? </b> </td>
+                                  <td> <input type="reset" value="Reset"> </td> </tr>
+             
+                    </tbody>
+                </table> 
+            </form>
+        
+        </div>
+           <p><b>Already have an account with us? <a href="bossSign-in.html">Sign in here</a></b></p>
+       </center>
+    </body>
+    </html>
+   
+
+
+
+

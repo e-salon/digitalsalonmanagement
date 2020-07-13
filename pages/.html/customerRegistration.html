@@ -3,32 +3,25 @@
     <head>
         <title>Customer Registration Form</title>
 
-       
+        <script src="../.js/customerRegistrationFormValidation.js"></script>
         <link rel="stylesheet" href="../.css/styles.css" >
         
-        <style>
-             div {
-                    background-color: navy;
-                    margin-top: 0pt;
-                    margin-right:20%;
-                    margin-bottom: 0px;
-                     margin-left: 20%;
-                 }
-
-        </style>
-        
+      
     </head>
 
     
-       <body>
+    <body>
            <center>
-             <div> 
+               <div id="form"> 
 
-                 <h1> Create your Nisuke account<br>
+                 <h1 class="heading"> Create your Nisuke account<br>
                      Experience a new beautiful way to locate and book the best hairdressers in town </h1>
-                 <aside>sections marked with <span><sup style="color: red">*</sup></span> are required </aside>           
-               <form name="customer registration form" action="../.php/customerinfo.php"
+                 
+                 <aside>sections marked with <span><sup style="color: red">*</sup></span> are required </aside> 
+                 
+               <form name="customerRegistrationForm" action="../.php/customerinfo.php"
                      onsubmit="return validateForm()" method="post">
+    
                    <table>
                        <tbody>
                            <tr> <td> <b> First name<span><sup style="color: red">*</sup></span>: </b></td>
@@ -73,18 +66,17 @@
                            <tr> <td> <b> Birth date<span><sup style="color: red">*</sup></span>: </b> </td>
                                <td><input type="date" required=""> </td> </tr>
        
-                           <tr> <td> <b> Create my account: </b> </td>
-                               <td> <input type="submit" value="submit"> </td> </tr>
+                           <tr> <td> <b> You are all set </b> </td>
+                               <td> <input type="submit" value="Create my account"> </td> </tr>
                            
-                           <tr> <td> <b> Reset all the values: </b> </td> 
-                               <td> <input type="reset"> </td> </tr>
+                           <tr> <td> <b> Reset all the values </b> </td> 
+                               <td> <input type="reset" value="Reset"> </td> </tr>
                    </tbody>
                    </table>
-           
             </form>
         
            </div>
-         <p><b>Already have an with us? <a href="customer sign-in form.html">Sign in here</a></b></p>
+         <p><b>Already have an account with us? <a href="customerSign-in.html">Sign in here</a></b></p>
        </center>
     </body>
 </html>

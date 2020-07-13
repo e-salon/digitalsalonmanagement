@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+    <head>
+        <title>Customer Sign-in Form</title>
+        
+        <link rel="stylesheet" href="../.css/styles.css" >
+        
+        <style>
+           div {
+                   background-color: navy;
+                   margin-top: 0pt;
+                   margin-right:20%;
+                   margin-bottom: 0px;
+                   margin-left: 20%;
+                }
+
+        </style>
+        
+    </head>
+
+    
+    <body>
+        <center>
+           <div> 
+
+                <h3> Welcome.Please sign-in to proceed </h3>
+               
+                <form action="../.php/customerverificationform.php" method="post">
+                <table>
+                    <tbody>
+                        <tr> <td> <b> Your registered mobile number<span><sup style="color:red">*</sup></span>: </b> </td>
+                            <td> <input type="tel" name="mobileNumber" value="" required> </td> <tr> </tr>
+
+                        <tr> <td> <b> Password<span><sup style ="color:red">*</sup></span>: </b> </td>
+                            <td> <input type="Password" name="password" value="" required> </td> </tr>
+
+                        <tr> <td> <b> Confirm your details and </b> </td>
+                            <td> <input type="submit" value="Login">  </td> </tr>
+
+                        <tr> <td> <b> If you entered incorrect details </b> </td> 
+                            <td> <input type="reset" value="Reset"> </td> </tr> 
+                    </tbody>
+                    </table>
+           
+                </form>
+        
+            </div>
+          <p><b>Forgot your password? <a href="customerPasswordRecovery.html">Recover it here</a></b></p>
+        </center>
+    </body>
+</html>
+    
+
+
+
+
