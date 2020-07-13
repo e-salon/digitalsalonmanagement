@@ -4,6 +4,7 @@
         <title>Salon Manager Sign-in Form</title>
 
         <link rel="stylesheet" href="../.css/styles.css" >
+        <script src="../.js/formValidation.js"></script>
         
             
     </head>
@@ -13,15 +14,19 @@
         <center>
             <div id="form"> 
 
-              <h3 class="heading"> Welcome again.Please sign in to manage your bookings </h3>
+              <h3 class="heading"> Welcome again.Please sign in to manage your customer bookings </h3>
+              
+              <aside>sections marked with <span><sup style="color: red">*</sup></span> are required </aside> 
                
-            <form action="" method="post">
+            <form name="salonManager"  action="" method="post" onsubmit="return validateform()">
             
-                <label > <b> Mobile Number<span class="asterisk">*</span>: </b> <input type="tel" name="mobileNumber" value="" required=""> </label> 
+                <label > <b> Mobile Number<span class="asterisk">*</span>: </b>
+                    <input type="tel" name="mobileNumber" value="" onkeyup="validateform();"> </label> 
 
             <br><br>
 
-            <label> <b> Password<span class="asterisk">*</span>: </b> <input type="password" name="password" value="" required=""> </label>
+            <label> <b> Password<span class="asterisk">*</span>: </b> 
+                <input type="password" name="password" value="" > </label>
 
             <br><br>   
               

@@ -26,20 +26,21 @@
                 <h3> Welcome.Please sign-in to proceed </h3>
                
                 <form action="../.php/customerverificationform.php" method="post">
-                <label> <b> Y
-our registered mobile number: </b> <input type="tel" name="mobileNumber" value="0765542197"> </label>
+                <label> <b> Your registered mobile number<span><sup style="color:red">*</sup></span>: </b> 
+                        <input type="tel" name="mobileNumber" value="" required> </label>
 
                 <br><br>
 
-                <label> <b> Password: </b> <input type="Password" name="password" value=""> </label>
+                <label> <b> Password<span><sup style ="color:red">*</sup></span>: </b> 
+                    <input type="Password" name="password" value="" required> </label>
 
                 <br><br>   
-              
-                <label> <b> Submit Button: </b> <input type="submit"> </label>
+     
+                <label> <b> Click here to </b> <input type="submit" value="Login">  </label>
 
                 <br><br>
 
-                <label> <b> Reset Button: </b> <input type="reset"> </label>
+                <label> <b> If you entered incorrect details </b> <input type="reset" value="Reset"> </label>
            
                 </form>
         

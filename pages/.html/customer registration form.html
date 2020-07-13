@@ -3,7 +3,7 @@
     <head>
         <title>Customer Registration Form</title>
 
-       
+        <script src="../.js/customerRegistrationFormValidation.js"></script>
         <link rel="stylesheet" href="../.css/styles.css" >
         
       
@@ -19,11 +19,11 @@
                  
                  <aside>sections marked with <span><sup style="color: red">*</sup></span> are required </aside> 
                  
-               <form name="customer registration form" action="../.php/customerinfo.php"
+               <form name="customerRegistrationForm" action="../.php/customerinfo.php"
                      onsubmit="return validateForm()" method="post">
     
                    <label> <b> First name<span><sup style="color: red">*</sup></span>: </b>
-                       <input type="text" name="firstName" value="" required=""> </label>
+                       <input type="text" name="firstName" value="" > </label>
 
                 <br><br>
 
@@ -47,7 +47,7 @@
                 <br><br>
             
                 <label> <b> Password<span><sup style="color: red">*</sup></span>: </b>
-                    <input type="password" name="password" value="" required="" > </label>
+                    <input type="password" name="password" value=""  > </label>
 
                 <br><br>
        
