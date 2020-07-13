@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+    <head>
+        <title>Customer Registration Form</title>
+
+       
+        <link rel="stylesheet" href="../.css/styles.css" >
+        
+        <style>
+             div {
+                    background-color: navy;
+                    margin-top: 0pt;
+                    margin-right:20%;
+                    margin-bottom: 0px;
+                     margin-left: 20%;
+                 }
+
+        </style>
+        
+    </head>
+
+    
+       <body>
+           <center>
+             <div> 
+
+                 <h1> Create your Nisuke account<br>
+                     Experience a new beautiful way to locate and book the best hairdressers in town </h1>
+                 <aside>sections marked with <span><sup style="color: red">*</sup></span> are required </aside>           
+               <form name="customer registration form" action="../.php/customerinfo.php"
+                     onsubmit="return validateForm()" method="post">
+                   <table>
+                       <tbody>
+                           <tr> <td> <b> First name<span><sup style="color: red">*</sup></span>: </b></td>
+                               <td> <input type="text" name="firstName" value="" > </td></tr>
+
+                           <tr> <td> <b> Last name<span><sup style="color: red">*</sup></span>: </b> </td>
+                               <td> <input type="text" name="lastName" value="" required="" > </td> </tr>     
+        
+            
+                           <tr><td> <b> Mobile Number<span><sup style="color: red">*</sup></span>: </b> </td>
+                               <td> <input type="tel" name="mobileNumber" value="" > </td> </tr>
+
+                         
+                           <tr> <td> <b> Email: </b> </td>
+                               <td> <input type="text"  name="email" value="" > </td> </tr>
+
+                           <tr> <td> <b> Age: </b> </td>
+                               <td> <input type="number" name="age"> </td> </tr>
+            
+                           <tr> <td> <b> Password<span><sup style="color: red">*</sup></span>: </b> </td>
+                               <td> <input type="password" name="password" value="" required="" > </td> </tr>
+
+         
+                           <tr> <td> <b> SEX::<span><sup style="color: red">*</sup></span>: </b> <td>
+                                <input type="radio" > <b> Male </b> 
+                                <input type="radio"> <b> Female </b> </td> </tr>
+                           
+                           <tr> <td> <b> Occupation: </b> </td> 
+                               <td><select name="Occupation" >
+                                  <option value="student" >student</option>
+                                  <option value="Teacher" selected="selected"> Teacher</option>
+                                  <option value="Lawyer"> Lawyer</option>
+                                  <option value="Doctor"> Doctor</option>
+                                  <option value="Cooker"> Cooker</option>
+                                  <option value="Hair stylish"> Hair Stylish</option>
+                                  <option value="Business person">Business person</option>
+                                  <option value="Accountant">Accountant</option>
+                                  <option value="Driver">Driver</option>
+                                   </select> </td> </tr>    
+                
+                
+                           <tr> <td> <b> Birth date<span><sup style="color: red">*</sup></span>: </b> </td>
+                               <td><input type="date" required=""> </td> </tr>
+       
+                           <tr> <td> <b> Create my account: </b> </td>
+                               <td> <input type="submit" value="submit"> </td> </tr>
+                           
+                           <tr> <td> <b> Reset all the values: </b> </td> 
+                               <td> <input type="reset"> </td> </tr>
+                   </tbody>
+                   </table>
+           
+            </form>
+        
+           </div>
+         <p><b>Already have an with us? <a href="customer sign-in form.html">Sign in here</a></b></p>
+       </center>
+    </body>
+</html>
+    
+
+
+
+
