@@ -23,19 +23,19 @@
         <center>
            <div> 
 
-                <h3> Welcome.Please sign-in to proceed </h3>
+                <h3 class="heading"> Welcome.Please enter your registered mobile number and password to proceed </h3>
                
-                <form action="../.php/customerverificationform.php" method="post">
+                <form action="../.php/customerAuthentication.php" method="post">
                 <table>
                     <tbody>
                         <tr> <td> <b> Your registered mobile number<span><sup style="color:red">*</sup></span>: </b> </td>
-                            <td> <input type="tel" name="mobileNumber" value="" required> </td> <tr> </tr>
+                            <td> <input type="tel" name="mobileNumber" placeholder="Example 0765..." value="" required> </td> <tr> </tr>
 
                         <tr> <td> <b> Password<span><sup style ="color:red">*</sup></span>: </b> </td>
-                            <td> <input type="Password" name="password" value="" required> </td> </tr>
+                            <td> <input type="Password" name="password" placeholder="Your password" value="" required> </td> </tr>
 
                         <tr> <td> <b> Confirm your details and </b> </td>
-                            <td> <input type="submit" value="Login">  </td> </tr>
+                            <td> <input type="submit" name="submit" value="Log in">  </td> </tr>
 
                         <tr> <td> <b> If you entered incorrect details </b> </td> 
                             <td> <input type="reset" value="Reset"> </td> </tr> 

@@ -7,7 +7,7 @@ var mobileNumber = document.customerRegistrationForm.mobileNumber.value;
 var email = document.customerRegistrationForm.email.value;
 var password=document.customerRegistrationForm.password.value;  
   
-if (firstName === null || firstName === "")
+if (firstName == null || firstName == "")
 {  
   alert("First name can't be blank");  
   return false;  
