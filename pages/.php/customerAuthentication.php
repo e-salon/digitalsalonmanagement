@@ -3,7 +3,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "customerdata";
+$dbname = "customer_information";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -13,13 +13,10 @@ if ($conn->connect_error) {
   
 }
 
-
+// authenticate a customer 
 $sql = "SELECT mobileNumber, password FROM mtejadata";
 $result = $conn->query($sql);
 
-
-
-	//include('connection.php');
 	if(isset($_POST["submit"])){
 		$mobileNumber = $_POST['mobileNumber'];
 		$password = $_POST['password'];
@@ -34,7 +31,7 @@ $result = $conn->query($sql);
 		}
                 
 		else{
-			echo "<p class='error1'>Password or mobile number not correct</p>";
+			echo "<p> Either password or mobile number is  incorrect </p>";
 			
 		}
 	}
