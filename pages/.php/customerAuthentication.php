@@ -27,11 +27,12 @@ $result = $conn->query($sql);
 		$row = mysqli_num_rows($result);
                 
 		if($row ==  1){
-			header("location:successfulLogin.php");
+			header("location:successfulCustomerLogin.php");
 		}
                 
 		else{
-			echo "<p> Either password or mobile number is  incorrect </p>";
+			echo "<p> Either password or mobile number is  incorrect<br>"
+                    . "Please try again </p>";
 			
 		}
 	}

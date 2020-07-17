@@ -10,8 +10,9 @@
     <center>
         <?php
         
-        echo '<h1> Welcome to Nisuke system<br>'
-        . ' Arranging appointments with your favourite hairdresser has been made easier</h1>';    
+        echo '<h1 class = "heading"> Welcome to Nisuke system<br>'
+        . ' Arranging appointments with your favourite <br>'
+                . 'hairdresser has been made easier</h1>';    
          ?>
         <h2>Are you customer?-<a href="pages/.html/customerRegistration.html">Click here to book a service at your favorite salon</a> </h2>
         <br>
@@ -19,5 +20,10 @@
         
         <h4>Encountered a problem?<a href="#">Let us know.</a></h4>
     </center>
+    <hr>
+    <center>
+        <p id="footer">Unless explicitly stated otherwise,all material is copyright of &#169 2020 Msusi Technologies Co. Ltd</p>  
+    </center>
+   
     </body>
 </html>

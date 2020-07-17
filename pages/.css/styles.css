@@ -6,8 +6,9 @@ html{
     }
     .heading{
         color: maroon;
-        background-color: green;
+        background-color:grey;
     }
+    
     #asterisk{
         color: red;
     }
@@ -23,3 +24,6 @@ html{
           .asterisk{
               color: red;
           }
+          #footer{
+              background-color: red;
+          }      
