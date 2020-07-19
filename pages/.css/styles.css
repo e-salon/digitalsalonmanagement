@@ -5,7 +5,7 @@ html{
     background-color:darkgrey;
     }
     .heading{
-        color: maroon;
+        color: pink;
         background-color:grey;
     }
     
@@ -25,5 +25,5 @@ html{
               color: red;
           }
           #footer{
-              background-color: red;
+              background-color: grey;
           }      
