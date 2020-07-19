@@ -17,18 +17,20 @@
                  <h1 class="heading"> Create your Nisuke account<br>
                      Experience a new beautiful way to locate and book the best hairdressers in town </h1>
                  
-                 <aside>sections marked with <span><sup style="color: red">*</sup></span> are required </aside> 
+                 <aside>sections marked with <sup class="asterisk">*</sup> are required </aside> 
                  
                <form name="customerRegistrationForm" action="../.php/customerinfo.php"
-                     onsubmit="return validateForm()" method="post">
+                      method="post" onsubmit="return validateform()" >
     
                    <table>
+                       <caption> <p>By creating an account you agree to our <a href="#">Terms & Privacy </a> </p> </caption>
+                      
                        <tbody>
-                           <tr> <td> <b> First name<span><sup style="color: red">*</sup></span>: </b></td>
+                           <tr> <td> <strong> First name <sup class="asterisk">*</sup>: </strong></td>
                                <td> <input type="text" name="firstName" value="" > </td></tr>
 
                            <tr> <td> <b> Last name<span><sup style="color: red">*</sup></span>: </b> </td>
-                               <td> <input type="text" name="lastName" value="" required="" > </td> </tr>     
+                               <td> <input type="text" name="lastName" value=""  > </td> </tr>     
         
             
                            <tr><td> <b> Mobile Number<span><sup style="color: red">*</sup></span>: </b> </td>
@@ -42,12 +44,15 @@
                                <td> <input type="number" name="age"> </td> </tr>
             
                            <tr> <td> <b> Password<span><sup style="color: red">*</sup></span>: </b> </td>
-                               <td> <input type="password" name="password" value="" required="" > </td> </tr>
+                               <td> <input type="password" name="password" value="" > </td> </tr>
+                           
+                           <tr> <td> <strong>Re-Enter your password<span><sup style="color: red">*</sup></span>: </strong></td>
+                               <td> <input type="password" name="password" value="" > </td> </tr>
 
          
-                           <tr> <td> <b> SEX::<span><sup style="color: red">*</sup></span>: </b> <td>
-                                <input type="radio" > <b> Male </b> 
-                                <input type="radio"> <b> Female </b> </td> </tr>
+                           <tr> <td> <b> SEX <sup class="asterisk">*</sup>: </b> <td>
+                                   <input type="radio" name="gender" value="male" id="male"> <b> Male </b> 
+                                   <input type="radio" name="gender" value="female" id="female"> <b> Female </b> </td> </tr>
                            
                            <tr> <td> <b> Occupation: </b> </td> 
                                <td><select name="Occupation" >
@@ -64,14 +69,16 @@
                 
                 
                            <tr> <td> <b> Birth date<span><sup style="color: red">*</sup></span>: </b> </td>
-                               <td><input type="date" required=""> </td> </tr>
+                               <td><input type="date" > </td> </tr>
        
                            <tr> <td> <b> You are all set </b> </td>
+                               
                                <td> <input type="submit" value="Create my account"> </td> </tr>
                            
                            <tr> <td> <b> Reset all the values </b> </td> 
                                <td> <input type="reset" value="Reset"> </td> </tr>
                    </tbody>
+                   
                    </table>
             </form>
         
