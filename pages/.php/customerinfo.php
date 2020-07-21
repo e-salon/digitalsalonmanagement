@@ -23,6 +23,7 @@ VALUES ('".$_POST['firstName']."', '".$_POST['lastName']."', '".$_POST['mobileNu
 if ($conn->query($sql) === TRUE) {
   echo "Congratulations!<br>"
     . "You are successfully registered.<br>";
+  echo'<p> Click here <a href="../.html/customerSign-in.html" > Log in</a> to log in</p>';
 } 
 else {
   echo "Error: " . $sql . "<br>" . $conn->error;

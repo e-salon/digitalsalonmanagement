@@ -16,44 +16,48 @@
             
             <aside>sections marked with <span><sup style="color: red">*</sup></span> are required </aside>
                
-            <form name="salon manager registration form" action="../.php/bossRegistration"
+            <form name="saloManagerRegistrationForm" action="../.php/bossiInfo.php"
                   onsubmit="" method="post" >
 
                 <table>
                     <tbody>
-                        <tr> <td> <b> First name <span><sup style="color: red">*</sup></span>: </b> </td>
+                        <tr> <td> <b> First name <sup class="asterisk">*</sup>: </b> </td>
                             <td> <input type="text" name="firstName" value="" required=""> </td> </tr>
 
-                        <tr> <td> <b> Last name <span><sup style="color: red">*</sup></span>: </b> </td> 
+                        <tr> <td> <b> Last name <sup class="asterisk">*</sup>: </b> </td> 
                             <td> <input type="text" name="lastName" value="" required=""> </td> </tr>         
            
 
-                        <tr> <td> <b> Mobile Number <span><sup style="color: red">*</sup></span>: </b> </td>
+                        <tr> <td> <b> Mobile Number <sup class="asterisk">*</sup>: </b> </td>
                             <td> <input type="tel" name="mobileNumber" value="" required=""> </td> </tr>
 
-                        <tr> <td> <b> Email: </b> </td>
+                        <tr> <td> <b> Email<sup class="asterisk">*</sup>: </b> </td>
                             <td> <input type="email" name="email" value=""> </td> </tr>         
 
                         <tr> <td> <b> Age:</b> </td>
                             <td> <input type="number" name="age" value=""> </td> </tr>
 
-                        <tr> <td> <b> Password<span id="asterisk">*</span>: </b> </td>
+                        <tr> <td> <b> Password<sup class="asterisk">*</sup>: </b> </td>
                             <td> <input type="password" name="password" value="" required=""> </td> </tr>
+                        
+                        <tr> <td> <b>Re-Enter Password<sup class="asterisk">*</sup>: </b> </td>
+                            <td> <input type="password" name="password2" value="" required=""> </td> </tr>
+
 
                 
-                        <tr>  <td> <b> SEX<span><sup style="color: red">*</sup></span>:: </b> </td>>  
+                        <tr>  <td> <b> SEX <sup class="asterisk">*</sup> : </b> </td>>  
                             <td> <input type="radio" name="male" value="" required> <b> Male </b> 
                               <input type="radio" name="female" value="" required=""> <b> Female </td> </tr>
        
-                              <tr> <td> <b> Birth date <span><sup style="color: red">*</sup></span>: </b> </td>
+                              <tr> <td> <b> Birth date <sup class="asterisk">*</sup> : </b> </td>
                                   <td>  <input type="date" name="date" value="" required=""> </td> </tr>
       
 
                               <tr> <td> <b> You are all set </b> </td>
-                                  <td> <input type="submit" value="Create an account"> </td> </tr>
+                                  <td> <input type="submit" name="submit" value="Create an account"> </td> </tr>
 
                               <tr> <td> <b> Filled in incorrect details? </b> </td>
-                                  <td> <input type="reset" value="Reset"> </td> </tr>
+                                  <td> <input type="reset" name="reset" value="Reset"> </td> </tr>
              
                     </tbody>
                 </table> 
