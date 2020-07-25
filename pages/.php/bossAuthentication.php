@@ -13,12 +13,7 @@ if ($conn->connect_error) {
   
 }
 
-
-$sql = "SELECT mobileNumber, password FROM bossData";
-$result = $conn->query($sql);
-
-
-	if(isset($_POST["submit"])){
+if(isset($_POST["submit"])){
 		$mobileNumber = $_POST['mobileNumber'];
 		$password = $_POST['password'];
 

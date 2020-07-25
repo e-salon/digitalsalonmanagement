@@ -1,5 +1,5 @@
 <?php
-define('databaseName','customer_information', TRUE);
+define('databaseName','salonManagers', TRUE);
 $servername = "localhost";
 $username = "root";
 $password = "";
@@ -16,9 +16,9 @@ echo "Connected successfully<br>";
 
 
 // insert customer information into 'mtejaData' table
-$sql = "INSERT INTO mtejaData (firstName, lastName, mobileNumber, email, age, password,password2,gender, occupations, birthdate )
+$sql = "INSERT INTO bossData (firstName, lastName, mobileNumber, email, password,password2,gender, birthdate )
 VALUES ('".$_POST['firstName']."', '".$_POST['lastName']."', '".$_POST['mobileNumber']."','".$_POST['email']."',"
-        . "'".$_POST['age']."', '".$_POST['password']."', '".$_POST['password2']."')";
+        . "'".$_POST['password']."', '".$_POST['password2']."', '".$_POST['gender']."', '".$_POST['birthdate']."')";
 
 if ($conn->query($sql) === TRUE) {
   echo "Congratulations!<br>"

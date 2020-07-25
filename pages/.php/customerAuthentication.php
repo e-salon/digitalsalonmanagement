@@ -13,13 +13,7 @@ if ($conn->connect_error) {
   
 }
 
-
-$sql = "SELECT mobileNumber, password FROM mtejadata";
-$result = $conn->query($sql);
-
-
-
-	//include('connection.php');
+         //include('connection.php');
 	if(isset($_POST["submit"])){
 		$mobileNumber = $_POST['mobileNumber'];
 		$password = $_POST['password'];

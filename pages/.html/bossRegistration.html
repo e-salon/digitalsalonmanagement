@@ -16,7 +16,7 @@
             
             <aside>sections marked with <span><sup style="color: red">*</sup></span> are required </aside>
                
-            <form name="saloManagerRegistrationForm" action="../.php/bossiInfo.php"
+            <form name="saloManagerRegistrationForm" action="../.php/bossInfo.php"
                   onsubmit="" method="post" >
 
                 <table>
@@ -34,23 +34,18 @@
                         <tr> <td> <b> Email<sup class="asterisk">*</sup>: </b> </td>
                             <td> <input type="email" name="email" value=""> </td> </tr>         
 
-                        <tr> <td> <b> Age:</b> </td>
-                            <td> <input type="number" name="age" value=""> </td> </tr>
-
                         <tr> <td> <b> Password<sup class="asterisk">*</sup>: </b> </td>
                             <td> <input type="password" name="password" value="" required=""> </td> </tr>
                         
                         <tr> <td> <b>Re-Enter Password<sup class="asterisk">*</sup>: </b> </td>
                             <td> <input type="password" name="password2" value="" required=""> </td> </tr>
-
-
                 
-                        <tr>  <td> <b> SEX <sup class="asterisk">*</sup> : </b> </td>>  
-                            <td> <input type="radio" name="male" value="" required> <b> Male </b> 
-                              <input type="radio" name="female" value="" required=""> <b> Female </td> </tr>
+                        <tr>  <td> <b> SEX <sup class="asterisk">*</sup> : </b> </td> 
+                              <td> <input type="radio" name="gender" value="male" > <b> Male </b> 
+                                    <input type="radio" name="gender" value="female" > <b> Female </td> </tr>
        
                               <tr> <td> <b> Birth date <sup class="asterisk">*</sup> : </b> </td>
-                                  <td>  <input type="date" name="date" value="" required=""> </td> </tr>
+                                  <td>  <input type="date" name="birthdate" value="" required=""> </td> </tr>
       
 
                               <tr> <td> <b> You are all set </b> </td>
