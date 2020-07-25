@@ -17,7 +17,7 @@ echo 'You are now logged in<br>'
 . 'You can now create a catalogue of your services.<br>';
 
 echo 'If you alreaddy have a catalogue, click here to manage your customer bookings'
-. '<a href="#" > My booking </a> <br>' ;
+. '<a href="#" > My booking </a> <br><br>' ;
 
 ?>
     
@@ -43,7 +43,7 @@ echo 'If you alreaddy have a catalogue, click here to manage your customer booki
                                    </select> </td> </tr> 
                          
                           <tr> <td> <b> Services Available: </b> </td> 
-                              <td><select name="services" size="2" multiple="multiple">
+                              <td><select name="services" size="1" multiple="multiple">
                                   <option value="croteching" >crotchets</option>
                                   <option value="Weaving" selected="selected"> Weaving</option>
                                   <option value="vitunguu"> Vitunguu</option>
@@ -90,10 +90,19 @@ echo 'If you alreaddy have a catalogue, click here to manage your customer booki
                     </tbody>
                 </table> 
             </form>   
+        <hr>
+    <footer>
+        <p id="footer">
+       
+            Unless explicitly expressed otherwise <br>
+            all material is copyright of &#169; 2020 Msusi Technologies Co. Ltd
+        </p>
         
+    </footer>
         
         </center>
-        </div>  
+        </div> 
+        
     
     </body>
 

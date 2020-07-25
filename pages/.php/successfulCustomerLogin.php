@@ -5,6 +5,7 @@
         <link rel="stylesheet" href="../.css/styles.css" >
         
         
+        
     </head>
     <body> 
     <center>   
@@ -38,6 +39,8 @@ echo "Connected successfully<br><br>";
             extract($row);
             echo "<strong>Salon Name:$salonName  <br></strong>";
             echo "Salon Location:$location <br> ";
+            echo "Services:$services <br>";
+            echo "Contacts:$mobileNumber <br>";
             echo "Salon working hours:$workingHours  <br>";
             echo '<a href="#"> Book here</a> <br><br>';
             
@@ -46,6 +49,16 @@ echo "Connected successfully<br><br>";
         
 
 ?>
+        
+        <hr>
+    <footer>
+        <p id="footer">
+       
+            Unless explicitly expressed otherwise <br>
+            all material is copyright of &#169; 2020 Msusi Technologies Co. Ltd
+        </p>
+        
+    </footer>
     </center>
 </body>
 </html>

@@ -1,4 +1,11 @@
-<?php
+<!DOCTYPE html>
+<head>
+    
+    <link rel="stylesheet" href="../.css/styles.css" >
+</head>
+    
+<body>
+   <?php
 
 /* 
  * This is the landing page where uploaded salon information is processed
@@ -58,3 +65,11 @@ if ($conn->query($sql) === TRUE) {
 
 $conn->close();
 
+?>
+
+ 
+    
+    
+</body>
+</html>
+    

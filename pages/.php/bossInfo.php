@@ -1,4 +1,12 @@
-<?php
+<!DOCTYPE html>
+<head>
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ <link rel="stylesheet" href="../.css/styles.css" >
+ <title> Salon manager information processor</title>
+</head>
+<body>
+    
+   <?php
 define('databaseName','salonManagers', TRUE);
 $servername = "localhost";
 $username = "root";
@@ -52,3 +60,10 @@ if ($conn->query($sql) === TRUE) {
 }*/
 
 $conn->close();
+?>
+   
+    
+</body>
+</html>
+
+  
