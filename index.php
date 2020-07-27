@@ -10,7 +10,7 @@
     <center>
         <?php
         
-        echo '<h1 class = "heading"> Welcome to Nisuke App system<br>'
+        echo '<h1 class = "heading"> Welcome to Nisuke App web system<br>'
         . ' Arranging appointments with your favourite <br>'
                 . 'hairdresser has been made easier</h1>';    
          ?>
