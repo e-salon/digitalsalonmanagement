@@ -1,4 +1,13 @@
-<?php
+<!DOCTYPE html>
+<head>
+    
+    <title> Verify your login details</title>  
+    <link rel="stylesheet" href="../.css/styles.css" >
+</head>
+    
+<body>
+<center>
+     <?php
 define('databaseName','customer_information', TRUE);
 $servername = "localhost";
 $username = "root";
@@ -13,13 +22,6 @@ if ($conn->connect_error) {
   
 }
 
-
-$sql = "SELECT mobileNumber, password FROM mtejadata";
-$result = $conn->query($sql);
-
-
-
-	//include('connection.php');
 	if(isset($_POST["submit"])){
 		$mobileNumber = $_POST['mobileNumber'];
 		$password = $_POST['password'];
@@ -41,14 +43,19 @@ $result = $conn->query($sql);
 		}
 	}
 	
-
-
-
-
-
-
-
-
-
 ?>
-
+    <p>
+        Forgot your password? <a href="../.html/customerPasswordRecovery.html" >Recover it here</a>
+    </p>
+  <hr>
+    <footer>
+        <p id="footer">
+       
+            Unless explicitly expressed otherwise <br>
+            all material is copyright of &#169; 2020 Msusi Technologies Co. Ltd
+        </p>
+        
+    </footer>
+</center>
+</body>
+  
