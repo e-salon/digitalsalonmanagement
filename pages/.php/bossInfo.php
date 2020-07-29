@@ -26,13 +26,10 @@ echo "Connected successfully<br>";
 // insert customer information into 'mtejaData' table
 $sql = "INSERT INTO bossData (firstName, lastName, mobileNumber, email, password,password2,gender, birthdate )
 VALUES ('".$_POST['firstName']."', '".$_POST['lastName']."', '".$_POST['mobileNumber']."','".$_POST['email']."',"
-<<<<<<< HEAD:pages/.php/bossiInfo.php
-        . "'".$_POST['age']."', '".$_POST['password']."', '".$_POST['password2']."'), '".$_POST['gender']."', '".$_POST['occupations']."', '".$_POST['birthdate']."'";
-=======
-        . "'".$_POST['password']."', '".$_POST['password2']."', '".$_POST['gender']."', '".$_POST['birthdate']."')";
->>>>>>> 28885df71c752bdaa21a8910c3704eac9121c175:pages/.php/bossInfo.php
 
-if ($conn->query($sql) === TRUE) {
+
+if ($connection->query($sql)=== TRUE)
+       {
   echo "Congratulations!<br>"
     . "You are successfully registered.<br>";
   echo'<p> Click here <a href="../.html/bossSign-in.html" > Log in</a> to log in</p>';
