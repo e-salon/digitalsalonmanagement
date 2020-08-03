@@ -39,3 +39,7 @@ html{
   display: table;
   clear: both;
 }
+
+#H-ruler{ width: 100%;
+         size:40px ;}
+

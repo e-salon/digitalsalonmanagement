@@ -34,9 +34,9 @@
        
         <h4>Encountered a problem?<a href="#">Let us know.</a></h4>
     </center>
-    <hr>
+    <hr id="H-ruler" />
     <center>
-        <p id="footer">Unless explicitly stated otherwise,all material is copyright of &#169 2020 Msusi Technologies Co. Ltd</p>  
+        <p id="footer">Unless explicitly stated otherwise,all material is copyright of &#169; 2020 Msusi Technologies Co. Ltd</p>  
     </center>
    
     </body>

@@ -42,6 +42,7 @@ echo "Connected successfully<br><br>";
             echo "Services:$services <br>";
             echo "Contacts:$mobileNumber <br>";
             echo "Salon working hours:$workingHours  <br>";
+            echo "Extra :$extras <br>";
             echo '<a href="#"> Book here</a> <br><br>';
             
         }
