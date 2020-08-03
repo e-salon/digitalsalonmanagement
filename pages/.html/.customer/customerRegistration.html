@@ -4,7 +4,7 @@
         <title>Customer Registration Form</title>
 
        <!-- <script src="../.js/customerRegistrationValidation.js"></script>-->
-        <link rel="stylesheet" href="../.css/styles.css" >
+        <link rel="stylesheet" href="../../.css/styles.css" >
         
       
     </head>
@@ -19,7 +19,7 @@
                  
                  <aside>sections marked with <sup class="asterisk">*</sup> are required </aside> 
                  
-               <form name="customerRegistrationForm" action="../.php/customerinfo.php"
+               <form name="customerRegistrationForm" action="../../.php/.customer/customerinfo.php"
                       method="post" onsubmit="return validateform()" >
     
                    <table>
@@ -30,7 +30,7 @@
                                <td> <input type="text" name="firstName" value="" required="" > </td></tr>
 
                            <tr> <td> <b> Last name<span><sup style="color: red">*</sup></span>: </b> </td>
-                               <td> <input type="text" name="lastName" value=""  required="" > </td> </tr>     
+                               <td> <input type="text" name="lastName"  value=""  required="" > </td> </tr>     
         
             
                            <tr><td> <b> Mobile Number<span><sup style="color: red">*</sup></span>: </b> </td>
@@ -42,7 +42,7 @@
 
                            
                            <tr> <td> <b> Password<span><sup style="color: red">*</sup></span>: </b> </td>
-                               <td> <input type="password" name="password" value=""  required=""> </td> </tr>
+                               <td> <input type="password" name="password" minlength="4" value=""  required=""> </td> </tr>
                            
                            <tr> <td> <strong>Re-Enter your password<span><sup style="color: red">*</sup></span>: </strong></td>
                                <td> <input type="password" name="password2" value="" required="" > </td> </tr>

@@ -1,4 +1,11 @@
-<?php
+<!DOCTYPE html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title> Boss database connection</title>  
+</head>
+
+<body>
+    <?php
 
 /* 
  * a connection making file
@@ -17,8 +24,13 @@ $connection = new mysqli($servername,$username, $password, $dbname );
 
 // Check connection
 if ($connection->connect_error) {
-  die("Connection failed: " . $connection->connect_error);
+  die("Connection to salon managers' database failed: " . $connection->connect_error);
 }
-echo "Wozah!! Connected successfully<br>";
+echo " Welcome aboard <br>";
 
 ?>
+ 
+</body>
+</html>
+
+   

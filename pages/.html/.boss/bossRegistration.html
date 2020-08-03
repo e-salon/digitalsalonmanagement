@@ -3,7 +3,7 @@
     <head>
         <title>Salon Manager Registration Form</title>
 
-        <link rel="stylesheet" href="../.css/styles.css" >
+        <link rel="stylesheet" href="../../.css/styles.css" >
         
         </head>
 
@@ -16,7 +16,7 @@
             
             <aside>sections marked with <span><sup style="color: red">*</sup></span> are required </aside>
                
-            <form name="saloManagerRegistrationForm" action="../.php/bossInfo.php"
+            <form name="saloManagerRegistrationForm" action="../../.php/.boss/bossInfo.php"
                   onsubmit="" method="post" >
 
                 <table>
@@ -41,8 +41,8 @@
                             <td> <input type="password" name="password2" value="" required=""> </td> </tr>
                 
                         <tr>  <td> <b> SEX <sup class="asterisk">*</sup> : </b> </td> 
-                              <td> <input type="radio" name="gender" value="male" > <b> Male </b> 
-                                    <input type="radio" name="gender" value="female" > <b> Female </td> </tr>
+                            <td> <input type="radio" name="gender" value="male" required="" > <strong> Male </strong> 
+                                  <input type="radio" name="gender" value="female" required=""> <strong> Female </strong></td> </tr>
        
                               <tr> <td> <b> Birth date <sup class="asterisk">*</sup> : </b> </td>
                                   <td>  <input type="date" name="birthdate" value="" required=""> </td> </tr>

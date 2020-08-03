@@ -20,13 +20,13 @@
             <div class="column">
                 
                 <h2>Are you customer?<br>
-                <a href="pages/.html/customerRegistration.html">Click here to book a service at your favorite salon</a> </h2>
+                    <a href="pages/.html/.customer/customerRegistration.html">Click here to book a service at your favorite salon</a> </h2>
         <br>
             </div>
             
             <div class="column">
                 <h2>Are you a salon owner/manager? <br>
-                <a href="pages/.html/bossRegistration.html">Click here to manage your bookings</a></h2>
+                    <a href="pages/.html/.boss/bossRegistration.html">Click here to manage your bookings</a></h2>
             </div>       
        
         
