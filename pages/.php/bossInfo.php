@@ -28,8 +28,11 @@ $sql = "INSERT INTO bossData (firstName, lastName, mobileNumber, email, password
 VALUES ('".$_POST['firstName']."', '".$_POST['lastName']."', '".$_POST['mobileNumber']."','".$_POST['email']."',"
 
 
-if ($connection->query($sql)=== TRUE)
-       {
+   
+       
+    //include connection  
+        
+      if($conn->query($sql)===TRUE){           
   echo "Congratulations!<br>"
     . "You are successfully registered.<br>";
   echo'<p> Click here <a href="../.html/bossSign-in.html" > Log in</a> to log in</p>';
@@ -39,7 +42,7 @@ else {
 }
 
 // sql to create table
-/*$sql = "CREATE TABLE mtejaData (
+$sql = "CREATE TABLE mtejaData (
 id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
 firstName VARCHAR(30) NOT NULL,
 lastName VARCHAR(30) NOT NULL,
@@ -58,7 +61,7 @@ if ($conn->query($sql) === TRUE) {
   echo "Table mtejaData created successfully";
 } else {
   echo "Error creating table: " . $conn->error;
-}*/
+}
 
 $conn->close();
 ?>

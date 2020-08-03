@@ -13,13 +13,13 @@ if ($connection->connect_error) {
 echo "Wozah!! Connected successfully<br>";
 
 // Create database
-/*$sql = "CREATE DATABASE salonManagers";
+$sql = "CREATE DATABASE salonManagers";
 if ($connection->query($sql) === TRUE) {
   echo "Congratulations Database created successfully<br>";
 } 
 else {
   echo "Error creating database: " . $connection->error;
-}*/
+}
 
 // sql to create table
 $sql = "CREATE TABLE salonmanagersregistry(
