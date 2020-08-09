@@ -12,18 +12,20 @@
     
     <body>
            <center>
-               <div id="form"> 
+               
+                <p id="home"> <a href="../../../index.php" > Home</a> </p>
+               <div id="form">
+                   
 
-                 <h1 class="heading"> Create your Nisuke account<br>
-                     Experience a new beautiful way to locate and book the best hairdressers in town </h1>
-                 
-                 <aside>sections marked with <sup class="asterisk">*</sup> are required </aside> 
+                   <h1 class="heading"> Experience a new beautiful way to locate and book to the best hairdressers in town <br> 
+                                        It begins with creating a Nisuke account<br></h1>               
+                   
                  
                <form name="customerRegistrationForm" action="../../.php/.customer/customerinfo.php"
                       method="post" onsubmit="return validateform()" >
     
                    <table>
-                       <caption> <p>By creating an account you agree to our <a href="#">Terms & Privacy </a> </p> </caption>
+                       <caption> <p> sections marked with <sup class="asterisk">*</sup> are required  </p> </caption>
                       
                        <tbody>
                            <tr> <td> <strong> First name <sup class="asterisk">*</sup>: </strong></td>
@@ -42,20 +44,20 @@
 
                            
                            <tr> <td> <b> Password<span><sup style="color: red">*</sup></span>: </b> </td>
-                               <td> <input type="password" name="password" minlength="4" value=""  required=""> </td> </tr>
+                               <td> <input type="password" name="password" minlength="3" value=""  required=""> </td> </tr>
                            
                            <tr> <td> <strong>Re-Enter your password<span><sup style="color: red">*</sup></span>: </strong></td>
-                               <td> <input type="password" name="password2" value="" required="" > </td> </tr>
+                               <td> <input type="password" name="password2" minlength="3"  value="" required="" > </td> </tr>
 
          
-                           <tr> <td> <b> SEX <sup class="asterisk">*</sup>: </b> <td>
+                           <tr> <td> <b> Sex <sup class="asterisk">*</sup>: </b> <td>
                                    <input type="radio" name="gender" value="male" id="male"> <b> Male </b> 
                                    <input type="radio" name="gender" value="female" id="female"> <b> Female </b> </td> </tr>
                            
                            <tr> <td> <b> Occupation: </b> </td> 
                                <td><select name="occupations" >
-                                  <option value="student" >student</option>
-                                  <option value="Teacher" selected="selected"> Teacher</option>
+                                  <option value="student"  selected="selected" > Student </option>
+                                  <option value="Teacher" > Teacher</option>
                                   <option value="Lawyer"> Lawyer</option>
                                   <option value="Doctor"> Doctor</option>
                                   <option value="Cooker"> Cooker</option>
@@ -68,6 +70,9 @@
                 
                            <tr> <td> <b> Birth date<span><sup style="color: red">*</sup></span>: </b> </td>
                                <td><input type="date"  name = "birthdate" value="" required> </td> </tr>
+                           
+                           <tr> <td> <strong> By creating an account you agree to our </strong> </td>
+                               <td> <strong> <a href="#">Terms & Privacy Policy </a> </strong> </td> </tr>
        
                            <tr> <td> <b> You are all set </b> </td>
                                
@@ -85,9 +90,10 @@
        </center>
     
      <hr>
-    <center>
-        <p id="footer">Unless explicitly stated otherwise,all material is copyright of &#169 2020 Msusi Technologies Co. Ltd</p>  
-    </center>
+    
+        <p id="footer"> &#169; 2020 Unless explicitly stated otherwise <br> 
+            all material is copyright of Msusi Technologies Co. Ltd</p>  
+    
     </body>
 </html>
     

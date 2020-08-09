@@ -9,7 +9,18 @@
   <?php
 
 include 'bossDatabaseconnection.php';
+$sql = " SELECT mobileNumber from bossData WHERE mobileNumber = '$_POST[mobileNumber]' ";
 
+$result = mysqli_query($connection, $sql);
+$row = mysqli_num_rows($result);
+
+if( $row >= 1)
+{    echo " <p id=\"content\"> This number is already registered <br> "
+    . "<a href=\"../../.html/.boss/bossSign-in.html\" > Sign in here </a> "
+        . "or If you forgot your password <a href=\"../../.html/.boss/bossPasswordRecovery.html\" > Recover it here</a></p>";}
+
+ else {
+    
 // insert customer information into 'mtejaData' table
 $sql = "INSERT INTO bossData (firstName, lastName, mobileNumber, email, password,password2,gender, birthdate )
 VALUES ('".$_POST['firstName']."', '".$_POST['lastName']."', '".$_POST['mobileNumber']."','".$_POST['email']."',"
@@ -24,11 +35,19 @@ else {
   echo "Error: " . $sql . "<br>" . $connection->error;
 }
 
+}
+
 $connection->close();
 ?>     
     
 </center>  
-    
+     <hr>
+    <footer>
+        <p id="footer">
+       
+             &#169; 2020 Unless explicitly expressed otherwise <br>
+            all material is copyright of Msusi Technologies Co. Ltd
+        </p> 
 </body>
 </html>
 

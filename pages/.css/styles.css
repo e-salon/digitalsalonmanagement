@@ -3,22 +3,31 @@
 
 html{
     background-color:darkgrey;
+    background-image: url(" ../../.images/IMG-20200806-WA0003.jpg" );
     }
     .heading{
         color: pink;
-        background-color:grey;
+       background-color:grey;
+        
     }
+    
+    body{text-align: center;
+    }
+    
+    #home{text-align: left;}
+    #logout{text-align: right;}
     
     #asterisk{
         color: red;
     }
     
     #form{
-                   background-color:grey;    
+                     
                    margin-top: 0pt;
                    margin-right:20%;
                    margin-bottom: 0px;
                    margin-left: 20%;
+                   background-color: grey;
           }
           
           .asterisk{
@@ -26,11 +35,14 @@ html{
           }
           #footer{
               background-color: grey;
+              float: bottom;
+              font-weight: bold;
           } 
           
     .column {
   float: left;
   width: 50%;
+  background-color: grey;
 }
 
 /* Clear floats after the columns */
@@ -38,4 +50,8 @@ html{
   content: "";
   display: table;
   clear: both;
+}
+#content{background-color: grey;}
+
+.viewconfirmation{text-align: right;
 }

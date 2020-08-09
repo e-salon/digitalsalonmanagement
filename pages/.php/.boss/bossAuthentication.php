@@ -11,6 +11,7 @@
 
     
     <body>
+        <p id="home"> <a href="../../../index.php" > Home </a> </p>
         <center>
             
  <?php
@@ -34,9 +35,9 @@ if(isset($_POST["submit"])){
 		}
                 
 		else{
-			echo "<p> Either password or mobile number is  incorrect<br>"
-                    . "Please try again </p>";
-			echo "<p> Please be sure you are using the details you used to sign-up</p>";
+			echo "<p id=\"content\" > Either password or mobile number is  incorrect<br>"
+                    . "Please try again <br> "
+			." Please be sure you are using the details you used to sign-up </p>";
 			
 		}
 	}
@@ -46,8 +47,8 @@ if(isset($_POST["submit"])){
     <footer>
         <p id="footer">
        
-            Unless explicitly expressed otherwise <br>
-            all material is copyright of &#169; 2020 Msusi Technologies Co. Ltd
+             &#169; 2020 Unless explicitly expressed otherwise, <br>
+            all material is copyright of Msusi Technologies Co. Ltd
         </p>
         
     </footer>

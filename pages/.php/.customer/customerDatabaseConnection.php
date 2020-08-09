@@ -4,7 +4,7 @@
 define('databaseNamex','customer_information', TRUE);
 $servername = "localhost";
 $username = "root";
-$password = "";
+$password = "kunonukaiza2020";
 $dbname = databaseNamex;
 
 // Create connection

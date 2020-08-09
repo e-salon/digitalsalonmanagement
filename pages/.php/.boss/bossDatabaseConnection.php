@@ -15,7 +15,7 @@
 define('databaseName','salonManagers', TRUE); // dtabase name constant
 $servername = "localhost";
 $username = "root";
-$password = "";
+$password = "kunonukaiza2020";
 $dbname = databaseName;
 
 
@@ -24,9 +24,9 @@ $connection = new mysqli($servername,$username, $password, $dbname );
 
 // Check connection
 if ($connection->connect_error) {
-  die("Connection to salon managers' database failed: " . $connection->connect_error);
+  die(" <h3 class=\"heading\"> Connection to salon managers' database failed: " . $connection->connect_error." </h3><br>");
 }
-echo " Welcome aboard <br>";
+echo "<h3 class=\"heading\"> Welcome aboard </h3> <br>";
 
 ?>
  

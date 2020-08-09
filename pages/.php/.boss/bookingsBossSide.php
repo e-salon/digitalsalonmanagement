@@ -8,22 +8,31 @@
         
     </head>
     <body> 
+        <p id="home"> <a href="../../../index.php" > Home </a> </p>
         
     <center>   
         
     <?php
    
 include_once 'bossDatabaseConnection.php';
-echo 'Managing your hair service bookings is now easier than ever.<br>';
+echo " <h3 class=\"heading\"> Managing your hair service bookings is now easier than ever.</h3> <br>";
 
-$query = "SELECT * FROM booking";
+$sql = "SELECT mobileNumber FROM bossdata WHERE mobileNumber='$_SESSION[bossMobileNumber]'";
+if ($result1 = mysqli_query($connection, $sql)){
+$query = "SELECT * FROM booking WHERE mobileNumber='$_SESSION[bossMobileNumber]'";
 $result = mysqli_query($connection, $query);
+
+$rowNumber = mysqli_num_rows($result);
+
+if ($rowNumber == 0){    echo "<p id=\"content\" > So far,No booking has been made to your salon.</p> ";}
+ else {
+    
 
 while ($row = mysqli_fetch_array($result)){
     
     extract($row);
 
-echo "<form action=\"bookingConfirmation.php\" method=\"post\" > <table ><tbody>"
+echo "<form id=\"form\" action=\"bookingConfirmation.php\" method=\"post\" > <table ><tbody>"
 . "<tr> <td> <strong> Salon Name </strong> </td> <td> <input type=\"text\" name=\"salonName\" value=\"$salonName\" > </td> </tr> <br>"
 . "<tr> <td> <strong> <em> Booked Service </em> </strong> </td> <td> <input type=\"text\" name=\"bookedService\" value=\"$bookedService\" > </td> </tr> <br> "       
 . "<tr> <td> Customer mobile number </td> <td> <input type=\"tel\" name=\"bookeeMobile\" value=\"$bookeeMobile\" > <br> "
@@ -35,7 +44,7 @@ echo "<form action=\"bookingConfirmation.php\" method=\"post\" > <table ><tbody>
         
 }
         
-        
+} }     
 
 ?>
         
@@ -43,8 +52,8 @@ echo "<form action=\"bookingConfirmation.php\" method=\"post\" > <table ><tbody>
     <footer>
         <p id="footer">
        
-            Unless explicitly expressed otherwise <br>
-            all material is copyright of &#169; 2020 Msusi Technologies Co. Ltd
+             &#169; 2020 Unless explicitly expressed otherwise, <br>
+            all material is copyright of Msusi Technologies Co. Ltd
         </p>
         
     </footer>

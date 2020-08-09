@@ -9,17 +9,19 @@
 
     
        <body>
+           <p id="home"> <a href="../../../index.php" > Home</a> </p>
            <center>
            <div> 
 
             <h1 class="heading"> Salon Manager Registration Form </h1>
             
-            <aside>sections marked with <span><sup style="color: red">*</sup></span> are required </aside>
+            
                
-            <form name="saloManagerRegistrationForm" action="../../.php/.boss/bossInfo.php"
+            <form id="form" name="saloManagerRegistrationForm" action="../../.php/.boss/bossInfo.php"
                   onsubmit="" method="post" >
 
                 <table>
+                    <caption> sections marked with <span><sup style="color: red">*</sup></span> are required </caption> 
                     <tbody>
                         <tr> <td> <b> First name <sup class="asterisk">*</sup>: </b> </td>
                             <td> <input type="text" name="firstName" value="" required=""> </td> </tr>
@@ -31,7 +33,7 @@
                         <tr> <td> <b> Mobile Number <sup class="asterisk">*</sup>: </b> </td>
                             <td> <input type="tel" name="mobileNumber" value="" required=""> </td> </tr>
 
-                        <tr> <td> <b> Email<sup class="asterisk">*</sup>: </b> </td>
+                        <tr> <td> <b> Email address <sup class="asterisk">*</sup>: </b> </td>
                             <td> <input type="email" name="email" value=""> </td> </tr>         
 
                         <tr> <td> <b> Password<sup class="asterisk">*</sup>: </b> </td>
@@ -40,12 +42,16 @@
                         <tr> <td> <b>Re-Enter Password<sup class="asterisk">*</sup>: </b> </td>
                             <td> <input type="password" name="password2" value="" required=""> </td> </tr>
                 
-                        <tr>  <td> <b> SEX <sup class="asterisk">*</sup> : </b> </td> 
+                        <tr>  <td> <b> Sex <sup class="asterisk">*</sup> : </b> </td> 
                             <td> <input type="radio" name="gender" value="male" required="" > <strong> Male </strong> 
                                   <input type="radio" name="gender" value="female" required=""> <strong> Female </strong></td> </tr>
        
                               <tr> <td> <b> Birth date <sup class="asterisk">*</sup> : </b> </td>
                                   <td>  <input type="date" name="birthdate" value="" required=""> </td> </tr>
+                              
+                               <tr> <td> <strong> By creating an account you agree to our </strong> </td>
+                               <td> <strong> <a href="#">Terms & Privacy Policy </a> </strong> </td> </tr>
+       
       
 
                               <tr> <td> <b> You are all set </b> </td>
@@ -61,6 +67,18 @@
         </div>
            <p><b>Already have an account with us? <a href="bossSign-in.html">Sign in here</a></b></p>
        </center>
+       <hr>
+        <center>
+    <footer>
+        <p id="footer">
+       
+            &#169; 2020 Unless explicitly expressed otherwise <br>
+            all material is copyright of Msusi Technologies Co. Ltd
+        </p>
+        
+    </footer>
+        
+        </center>
     </body>
     </html>
    

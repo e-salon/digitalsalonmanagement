@@ -14,20 +14,7 @@
     <center>
         
  <?php
-define('databaseName','customer_information', TRUE);
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = databaseName;
-
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
-
-// Check connection
-if ($conn->connect_error) {
-  die("Connection failed: " . $conn->connect_error);
-}
-echo "Connected successfully<br>";
+include_once 'customerDatabaseConnection.php';
 
 
 // insert customer information into 'mtejaData' table
@@ -50,6 +37,10 @@ $conn->close();
 ?>
         
 </center>
+     <hr>
+    
+        <p id="footer">Unless explicitly stated otherwise <br> 
+            all material is copyright of &#169; 2020 Msusi Technologies Co. Ltd</p>  
     
  </body>
 </html>

@@ -6,21 +6,35 @@
     </head>
     
     <body>
+        <p id="home"> <a href="../../../index.php" > Home </a> </p>
         <div>
             <center>
                
      <?php
-echo ' As a Nisuke App member, you can create a catalogue of your salon services.<br>'
-. 'and manage customer bookings on the go <br><br> ';
+     
+     include_once 'bossDatabaseConnection.php';
+echo "<h3 class=\"heading\"> As a Nisuke member, you can create a"
+     . " catalogue of your salon services.<br>"
+     . "and manage customer bookings on the go <br><br> "
 
-echo 'If you already have a services catalogue, click here to manage your customer bookings'
-.'<br>'. '<a href="bookingsBossSide.php" > View and manage customers bookings </a> <br><br>' ;
+     . " If you already have a services catalogue, "
+        . "<br> <a href=\"bookingsBossSide.php\" > "
+        . "View and manage customers bookings </a> <br><br> " 
 
-echo "If you have not registered your salon in our system, kindly fill the form below <br><br> ";
+     ."If you have not registered your salon in our system,"
+        . " kindly fill in the form below <br><br> </h3>";
 
+$sql = "SELECT photos FROM salon WHERE "
+        . "mobileNumber = '$_SESSION[bossMobileNumber]'";
+$imageresult = mysqli_query($connection,$sql);
+
+while ($rows = mysqli_fetch_assoc($imageresult)){
+    $image = $rows ['photos'];
+    echo " AI <img src=\"$image\" alt=\"image\" > <br> ";
+}
 ?>
     
-                <form name="saloManagerServicesForm" action="uploadSalonInformation.php"
+                <form  id="form" name="saloManagerServicesForm" action="uploadSalonInformation.php"
                   onsubmit="" method="post" >
 
                 <table>
@@ -80,10 +94,14 @@ echo "If you have not registered your salon in our system, kindly fill the form 
                               <td> <input type="text" name="workingHours" value="0800-1800 hrs" required=""> </td> </tr>                        
 
                         <tr> <td> <b> Salon description<sup class="asterisk">*</sup>: </b> </td>
-                            <td> <input type="text" name="salonDescription" maxlength="500" value=""> </td> </tr>                 
+                            <td> <input type="text" name="salonDescription" maxlength="500" value=""> </td> </tr> 
+                        
+                        <tr> <td> <b> Some pictures <sup class="asterisk">*</sup> : </b> </td>
+                             <td>  <input type="file" name="photos" required=""> </td> </tr>
+                              
                          
                         <tr> <td> <strong> You are all set </strong> </td>
-                                  <td> <input type="submit" name="submit" value="Upload my salon information"> </td> </tr>
+                             <td> <input type="submit" name="submit" value="Upload my salon information"> </td> </tr>
 
                               <tr> <td> <strong> Filled in incorrect details? </strong> </td>
                                   <td> <input type="reset" name="reset" value="Reset"> </td> </tr>
@@ -95,8 +113,8 @@ echo "If you have not registered your salon in our system, kindly fill the form 
     <footer>
         <p id="footer">
        
-            Unless explicitly expressed otherwise <br>
-            all material is copyright of &#169; 2020 Msusi Technologies Co. Ltd
+             &#169; 2020 Unless explicitly expressed otherwise <br>
+            all material is copyright of Msusi Technologies Co. Ltd
         </p>
         
     </footer>
