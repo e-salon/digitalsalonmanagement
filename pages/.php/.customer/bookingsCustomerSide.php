@@ -19,10 +19,10 @@ echo " <h3 class=\"heading\" > Welcome back <br>"
       ."Booking a hair service with top-notch hair stylists is now easier than ever. </h3><br>";
 
 echo "<form id=\"form\" action=\"customer-bookingsProcessor.php\" method=\"post\" > <table ><tbody>"
-. "<tr> <td> <strong> Salon Name </strong> </td> <td> <input type=\"text\" name=\"salonName\" value=\"$_POST[salonName]\" > </td> </tr> <br>"
+. "<tr> <td> <strong> Salon Name </strong> </td> <td> <input type=\"text\" name=\"salonName\" value=\"$_POST[salonName]\" readonly=\"\" > </td> </tr> <br>"
 . "<tr> <td>  </td> <td> <input type=\"hidden\" name=\"mobileNumber\" value=\"$_POST[mobileNumber]\" > </td> </tr> <br> "
 . "<tr> <td> <strong> <em> Your preferred Service </em> </strong> </td> <td> <input type=\"text\" name=\"bookedService\" value=\"\" > </td> </tr> <br> "
-. "<tr> <td> Your mobile number </td> <td> <input type=\"tel\" name=\"bookeeMobile\" value=\"{$_SESSION['customerMobileNumber']}\" > <br> "        
+. "<tr> <td> Your mobile number </td> <td> <input type=\"tel\" name=\"bookeeMobile\" value=\"{$_SESSION['customerMobileNumber']}\" readonly=\"\" > <br> "        
 . "<tr> <td> <strong> <em> Select your service time </em> </strong> </td> <td> <input type=\"text\" name=\"bookedTime\" value=\"\" > </td> </tr>  <br> "
 . "<tr> <td>  </td> <td> <input type=\"hidden\" name=\"bookingConfirmed\" value=\"no\" > </td> </tr> <br> "
 . "<tr> <td> <strong> Reserve my spot </strong> </td> <td> <input type=\"submit\" name=\"confirmedSlot\" value=\"Reserve this time for me\"> </td> </tr>"       

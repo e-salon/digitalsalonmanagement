@@ -24,14 +24,6 @@ echo "<h3 class=\"heading\"> As a Nisuke member, you can create a"
      ."If you have not registered your salon in our system,"
         . " kindly fill in the form below <br><br> </h3>";
 
-$sql = "SELECT photos FROM salon WHERE "
-        . "mobileNumber = '$_SESSION[bossMobileNumber]'";
-$imageresult = mysqli_query($connection,$sql);
-
-while ($rows = mysqli_fetch_assoc($imageresult)){
-    $image = $rows ['photos'];
-    echo " AI <img src=\"$image\" alt=\"image\" > <br> ";
-}
 ?>
     
                 <form  id="form" name="saloManagerServicesForm" action="uploadSalonInformation.php"
