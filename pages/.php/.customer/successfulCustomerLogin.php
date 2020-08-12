@@ -28,7 +28,11 @@ echo "<h3 class=\"heading\" >As a Nisuke member,you can browse your favorite <br
             
             echo $error_message.'<br>';
             die("Couldn't execute query.");}
-        while ($row = mysqli_fetch_array($result)) {
+            
+            $row = mysqli_num_rows($result);
+        
+ if ($row>=1) {       
+        while ( $row = mysqli_fetch_array($result)) {
             extract($row);
             echo "<form id=\"form\"name=\"$salonName\"action=\"bookingsCustomerSide.php\" method=\"post\" > <table ><tbody>"
             . "<tr> <td> <strong> Salon Name: </strong> </td> <td> <input type=\"text\" name=\"salonName\" value=\"$salonName\" readonly=\"\" > </td> </tr> <br>"
@@ -38,13 +42,13 @@ echo "<h3 class=\"heading\" >As a Nisuke member,you can browse your favorite <br
             . "<tr> <td> Salon working hours: </td> <td> <input type=\"text\" name=\"workingHours\" value=\"$workingHours\" readonly=\"\" > </td> </tr>  <br> "
             . "<tr> <td>  </td> <td> <input type=\"hidden\" name=\customerMobileNumber\" value=\"{$_SESSION['customerMobileNumber']}\" readonly=\"\" > </td> </tr> <br> "
             . "<tr> <td> Salon description: </td> <td> <textarea rows=\"10\" columns=\"4\" size=\"20\" name=\salonDescription\" readonly=\"\" > $salonDescription </textarea> </td> </tr> <br> "
-            . "<tr> <td> Salon pictures: </td> <td> $photos </td> </tr> <br> "
+            . "<tr> <td> Salon pictures: </td> <td> <img src=\" $photos \"/> </td> </tr> <br> "
             . "<tr> <td> <strong> Impressed? </strong> </td> <td> <input type=\"submit\" value=\"Book your slot\" name=\"bookingSlot\" > </td> </tr> <br> "
-            . "</tbody></table> </form>";
-            
-           
-            
-        }
+            . "</tbody></table> </form>";      
+}}
+ else {    echo "<p id=\"content\" > We are sorry currently there is no<br>"
+     . " salon registered in our system<br> "
+. "Please come again next time";}
         
         
 $connection->close();

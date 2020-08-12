@@ -15,9 +15,13 @@ $result = mysqli_query($connection, $sql);
 $row = mysqli_num_rows($result);
 
 if( $row >= 1)
-{    echo " <p id=\"content\"> This number is already registered <br> "
-    . "<a href=\"../../.html/.boss/bossSign-in.html\" > Sign in here </a> "
-        . "or If you forgot your password <a href=\"../../.html/.boss/bossPasswordRecovery.html\" > Recover it here</a></p>";}
+{    echo " <p id=\"content\"> This number is already registered <br><br> "
+    . " Please <a href=\"../../.html/.boss/bossSign-in.html\" > "
+        . "Sign in here </a> using this number <br>"
+        . "<br> OR <br>"
+        . "If you forgot your password "
+        . "<a href=\"../../.html/.boss/bossPasswordRecovery.html\" > "
+        . "Recover it here </a> </p>";}
 
  else {
     
@@ -27,9 +31,11 @@ VALUES ('".$_POST['firstName']."', '".$_POST['lastName']."', '".$_POST['mobileNu
         . "'".$_POST['password']."', '".$_POST['password2']."', '".$_POST['gender']."', '".$_POST['birthdate']."')";
 
 if ($connection->query($sql) === TRUE) {
-  echo "Congratulations!<br>"
-    . "You are successfully registered.<br>";
-  echo'<p> Click here <a href="../../.html/.boss/bossSign-in.html" > Log in</a> to log in</p>';
+  echo " <p id=\"content\" > Congratulations!<br><br>"
+    . "You are successfully registered.<br><br>"
+  ." Click here "
+   . "<a href=\"../../.html/.boss/bossSign-in.html\" > Log in here </a> "
+          . "to easily manage your salon on the go </p>";
 } 
 else {
   echo "Error: " . $sql . "<br>" . $connection->error;

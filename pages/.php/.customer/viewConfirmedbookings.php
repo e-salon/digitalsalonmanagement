@@ -32,7 +32,8 @@ This code is to enable the customer to view their confirmed bookings
             $rowNumber = mysqli_fetch_array($result);
             
 if ( $rowNumber == 0){
-     echo " <p id=\"content\" > All of your bookings are yet to be confirmed </p>";
+     echo " <p id=\"content\" > Either you have not made any booking,"
+    . "<br> or all of your bookings are yet to be confirmed </p>";
        }
 
  else {

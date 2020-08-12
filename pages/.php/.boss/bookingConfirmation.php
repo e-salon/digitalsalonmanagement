@@ -43,7 +43,9 @@ and open the template in the editor.
                         $result3 = mysqli_query($connection, $sql);
                       
                         if($result3 == TRUE) {
-                       echo " The booking is confirmed succeessfully";}
+                       echo " <p id=\"content\"> The booking"
+                            . " is confirmed succeessfully<br> "
+                               . "Now wait for your customer to show up </p>";}
                          else {    echo "update failed hence no booking confirmation";}
                         
                             }

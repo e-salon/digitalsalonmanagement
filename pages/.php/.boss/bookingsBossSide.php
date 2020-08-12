@@ -24,7 +24,8 @@ $result = mysqli_query($connection, $query);
 
 $rowNumber = mysqli_num_rows($result);
 
-if ($rowNumber == 0){    echo "<p id=\"content\" > So far,No booking has been made to your salon.</p> ";}
+if ($rowNumber == 0){    echo "<p id=\"content\" > Hmmnh!<br><br> "
+    . "No booking has been made to your salon yet.</p> ";}
  else {
     
 

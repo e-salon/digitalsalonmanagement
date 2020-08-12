@@ -32,8 +32,9 @@ $sql = "SELECT bookeeMobile, salonName from booking WHERE bookeeMobile = '$_SESS
         
        if ($connection->query($query) === TRUE) {
             echo "<p id=\"content\" > You have successfully made a booking slot <br>"
-            ."<p> Kindly wait for the salon manager to confirm your booking slot <br> "
-            . " <a href=\" viewConfirmedbookings.php\" > View your confirmed bookings here </a> </p>";
+            ." Kindly wait for the salon manager to confirm your booking slot <br> "
+            . " <a href=\" viewConfirmedbookings.php\" > "
+                    . "View your confirmed bookings here </a> </p>";
            } 
            
        else {
@@ -41,7 +42,8 @@ $sql = "SELECT bookeeMobile, salonName from booking WHERE bookeeMobile = '$_SESS
     }}
     
  else {
-    echo "<p id=\"content\"> You cannot arrage more than one unconfirmed bookings to a single salon <br>"
+    echo "<p id=\"content\"> You cannot arrage more than one "
+     . "<br> unconfirmed bookings to a single salon <br>"
      . "Please wait for your first booking to be confirmed. <br> "
             . " <a href=\" viewConfirmedbookings.php\" > View your confirmed bookings here </a> </p>";
     

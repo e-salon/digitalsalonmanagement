@@ -26,7 +26,7 @@ echo "<h3 class=\"heading\"> As a Nisuke member, you can create a"
 
 ?>
     
-                <form  id="form" name="saloManagerServicesForm" action="uploadSalonInformation.php"
+                <form  id="form" enctype="multipart/form-data" name="saloManagerServicesForm" action="uploadSalonInformation.php"
                   onsubmit="" method="post" >
 
                 <table>
@@ -89,8 +89,9 @@ echo "<h3 class=\"heading\"> As a Nisuke member, you can create a"
                             <td> <input type="text" name="salonDescription" maxlength="500" value=""> </td> </tr> 
                         
                         <tr> <td> <b> Some pictures <sup class="asterisk">*</sup> : </b> </td>
-                             <td>  <input type="file" name="photos" required=""> </td> </tr>
-                              
+                             <td>  <input type="file" name="photos" required=""> 
+                                 <label for="customfile" > </label></td> </tr>
+                                 
                          
                         <tr> <td> <strong> You are all set </strong> </td>
                              <td> <input type="submit" name="submit" value="Upload my salon information"> </td> </tr>
