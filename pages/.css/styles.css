@@ -1,6 +1,6 @@
 
 
-
+.brand{ color: orangered;}
 html{
     background-color:darkgrey;
     background-image: url(" ../../.images/IMG-20200806-WA0003.jpg" );
@@ -28,6 +28,7 @@ html{
                    margin-bottom: 0px;
                    margin-left: 20%;
                    background-color: grey;
+                   font-weight: bold;
           }
           
           .asterisk{
@@ -51,7 +52,12 @@ html{
   display: table;
   clear: both;
 }
-#content{background-color: grey;}
+#content{background-color: grey;
+   font-weight: bold;}
 
 .viewconfirmation{text-align: right;
 }
+
+.field{background-color: darkred;}
+.mawasiliano{border: 2.0px;
+padding: 40px;}

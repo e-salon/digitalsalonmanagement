@@ -23,6 +23,10 @@ else if(password.length<6){
   return false;  
   }
   
+  else if (email === null || email === "")
+{alert("First name can't be blank");  
+  return false; }
+  
   
 }  
 

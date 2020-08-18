@@ -5,6 +5,9 @@
 </head>
     
 <body>
+    <p id="home"> <a href="../../../index.php" > Home </a> </p>
+        <p id="logout"> <a href="../../.html/.customer/customerSign-in.html">
+                Logout </a></p>
 <center>
     
 <?php
@@ -38,10 +41,10 @@ if( $row >= 1 )
      $target_file=$target_dir.basename($_FILES['photos']['name']);
      move_uploaded_file($_FILES['photos']["tmp_name"], $target_file);
              
-$sql = "INSERT INTO salon (salonName, location, services, 
+$sql = "INSERT INTO salon (salonName, location, services,2ndservice, 
     extras, mobileNumber,numberOfAttendants,workingHours,salonDescription,photos )
 VALUES ('".$_POST['salonName']."', '".$_POST['location']."',"
-        . " '".$_POST['services']."','".$_POST['extras']."',"
+        . " '".$_POST['services']."','".$_POST['2ndservice']."','".$_POST['extras']."',"
         ." '".$_POST['mobileNumber']."', '".$_POST['numberOfAttendants']."', "
         . "'".$_POST['workingHours']."', '".$_POST['salonDescription']."',"
         ." '".$target_file."')";

@@ -9,15 +9,20 @@
     </head>
     <body> 
         <p id="home"> <a href="../../../index.php" > Home </a> </p>
-        
+        <p id="logout"> <a href="../../.html/.customer/customerSign-in.html">
+                Logout </a></p>
     <center>   
         
     <?php
    
 include_once 'bossDatabaseConnection.php';
-echo " <h3 class=\"heading\"> Managing your hair service bookings is now easier than ever.</h3> <br>";
 
-$sql = "SELECT mobileNumber FROM bossdata WHERE mobileNumber='$_SESSION[bossMobileNumber]'";
+echo " <h3 class=\"heading\"> Managing your hair service bookings "
+. " <br> is now easier than ever.</h3> <br>";
+
+$sql = "SELECT mobileNumber FROM bossdata WHERE "
+        . "mobileNumber='$_SESSION[bossMobileNumber]'";
+
 if ($result1 = mysqli_query($connection, $sql)){
 $query = "SELECT * FROM booking WHERE mobileNumber='$_SESSION[bossMobileNumber]'";
 $result = mysqli_query($connection, $query);
@@ -54,7 +59,7 @@ echo "<form id=\"form\" action=\"bookingConfirmation.php\" method=\"post\" > <ta
         <p id="footer">
        
              &#169; 2020 Unless explicitly expressed otherwise, <br>
-            all material is copyright of Msusi Technologies Co. Ltd
+            all material is copyright of Kunonu Technologies Co. Ltd
         </p>
         
     </footer>

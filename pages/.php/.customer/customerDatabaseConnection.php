@@ -12,7 +12,8 @@ $connectionx = new mysqli($servername, $username, $password, $dbname);
 
 // Check connection
 if ($connectionx->connect_error) {
-  die("Connection to the customer information database failed: " . $connectionx->connect_error);
+  die(" <p id=\"content\" > Connection to the customer"
+       . " information database failed: " . $connectionx->connect_error."<br> </p> ");
 }
-echo " Welcome aboard <br> <br> ";
+echo "<h1 class=\"heading\" > Welcome aboard <br> <br> </h1>";
 

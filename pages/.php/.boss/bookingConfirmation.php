@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
+code for the boss to confirm customer booking
 -->
 <html>
     <head>
@@ -11,6 +9,7 @@ and open the template in the editor.
         <link rel="stylesheet" href="../../.css/styles.css">
     </head>
     <body>
+        <p id="home"> <a href="../../../index.php" > Home </a> </p>
         <p id="logout"> <a href="../../.html/.boss/bossSign-in.html" > Logout </a> </p>
     <center>
         <?php
@@ -49,7 +48,8 @@ and open the template in the editor.
                          else {    echo "update failed hence no booking confirmation";}
                         
                             }
- else {echo "This booking is already confirmed";}
+ else {echo " <p id=\"content\" > This booking is already confirmed <br>"
+     . "Wait for the customer to show up <br> </p> ";}
                         
                         
                         
@@ -65,7 +65,7 @@ and open the template in the editor.
         <p id="footer">
        
             &#169; 2020 Unless explicitly expressed otherwise, <br>
-            all material is copyright of Msusi Technologies Co. Ltd
+            all material is copyright of Kunonu Technologies Co. Ltd
         </p>
         
     </footer>

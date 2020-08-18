@@ -7,9 +7,10 @@
 </head>
     
 <body>
+    <p id="home"> <a href="../../../index.php" > Home </a> </p>
 <center>
      <?php
-     $mobile = getCustomerMobileNumber();
+    
     include 'customerDatabaseConnection.php';
 
 	if(isset($_POST["submit"])){
@@ -40,20 +41,15 @@
         
         ?>
     
-    <?php
-     function getCustomerMobileNumber(){
-            return $_POST['mobileNumber'];
-        }
-    ?>
-    <p>
+        <p>
         Forgot your password? <a href="../../.html/.customer/customerPasswordRecovery.html" >Recover it here</a>
     </p>
   <hr>
     <footer>
         <p id="footer">
        
-             &#169; 2020 Unless explicitly expressed otherwise <br>
-            all material is copyright of Msusi Technologies Co. Ltd
+             &#169; 2020 Unless explicitly expressed otherwise, <br>
+            all material is copyright of Kunonu Technologies Co. Ltd
         </p>
         
     </footer>

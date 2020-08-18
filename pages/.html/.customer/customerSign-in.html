@@ -15,23 +15,24 @@
                 <p id="home"> <a href="../../../index.php" > Home</a> </p>
 
                 <h3 class="heading"> Welcome back <br>
-                    Please enter your registered mobile number and password to proceed </h3>
+                    Please enter your registered mobile number
+                    <br> and password to proceed </h3>
                
                 <form id="form" action="../../.php/.customer/customerAuthentication.php" method="post">
                     <table> 
                         <caption> <p> sections marked with <sup class="asterisk">*</sup> are required  </p></caption>
                     <tbody>
                         <tr> <td> <b> Your registered mobile number <sup class="asterisk " > *</sup>: </b> </td>
-                            <td> <input type="tel" name="mobileNumber" placeholder="Example 0765..." value="" required> </td> </tr>
+                            <td> <input class="field" type="tel" name="mobileNumber" placeholder="Example 0765..." value="" required> </td> </tr>
 
                         <tr> <td> <b> Password<sup id="asterisk"> *</sup>: </b> </td>
-                            <td> <input type="password" name="password" placeholder="Enter your password" value="" required> </td> </tr>
+                            <td> <input class="field" type="password" name="password" placeholder="Enter your password" value="" required> </td> </tr>
 
                         <tr> <td> <b> Confirm your details and </b> </td>
-                            <td> <input type="submit" name="submit" value="Log in" >  </td> </tr>
+                            <td> <input class="field" type="submit" name="submit" value="Log in" >  </td> </tr>
 
                         <tr> <td> <b> If you entered incorrect details </b> </td> 
-                            <td> <input type="reset" value="Reset" > </td> </tr> 
+                            <td> <input class="field" type="reset" value="Reset" > </td> </tr> 
                         
                         <tr> <td> <strong> Forgot your password? </strong> </td>  
                             <td> <strong> <a href="customerPasswordRecovery.html">Recover it here</a></strong> </td> </tr>
@@ -48,8 +49,8 @@
     
      <hr>
     <center>
-        <p id="footer"> &#169; 2020 Unless explicitly stated otherwise
-            <br> all material is copyright of Msusi Technologies Co. Ltd</p>  
+        <p id="footer"> &#169; 2020 Unless explicitly stated otherwise,
+            <br> all material is copyright of Kunonu Technologies Co. Ltd</p>  
     </center>
     </body>
 </html>

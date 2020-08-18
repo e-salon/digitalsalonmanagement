@@ -3,7 +3,7 @@
     <head>
         <title>Customer Registration Form</title>
 
-       <!-- <script src="../.js/customerRegistrationValidation.js"></script>-->
+       <script src="../.js/customerRegistrationValidation.js"></script>
         <link rel="stylesheet" href="../../.css/styles.css" >
         
       
@@ -21,41 +21,41 @@
                                         It begins with creating a Nisuke account<br></h1>               
                    
                  
-               <form name="customerRegistrationForm" action="../../.php/.customer/customerinfo.php"
+               <form name="customerRegistrationForm" action="../../.php/.customer/customerInfo.php"
                       method="post" onsubmit="return validateform()" >
     
                    <table>
                        <caption> <p> sections marked with <sup class="asterisk">*</sup> are required  </p> </caption>
                       
                        <tbody>
-                           <tr> <td> <strong> First name <sup class="asterisk">*</sup>: </strong></td>
-                               <td> <input type="text" name="firstName" value="" required="" > </td></tr>
+                           <tr> <td > <strong> First name <sup class="asterisk">*</sup>: </strong></td>
+                               <td > <input class="field" type="text" name="firstName" > </td></tr>
 
-                           <tr> <td> <b> Last name<span><sup style="color: red">*</sup></span>: </b> </td>
-                               <td> <input type="text" name="lastName"  value=""  required="" > </td> </tr>     
+                           <tr> <td> <b> Last name <sup class="asterisk" >*</sup> : </b> </td>
+                               <td> <input class="field" type="text" name="lastName"  > </td> </tr>     
         
             
-                           <tr><td> <b> Mobile Number<span><sup style="color: red">*</sup></span>: </b> </td>
-                               <td> <input type="tel" name="mobileNumber" value="" required="" > </td> </tr>
+                           <tr><td> <b> Mobile Number <sup class="asterisk">*</sup>: </b> </td>
+                               <td> <input class="field" type="tel" name="mobileNumber" > </td> </tr>
 
                          
                            <tr> <td> <b> Email: </b> </td>
-                               <td> <input type="email"  name="email" value="" required> </td> </tr>
+                               <td> <input class="field" type="email"  name="email" > </td> </tr>
 
                            
-                           <tr> <td> <b> Password<span><sup style="color: red">*</sup></span>: </b> </td>
-                               <td> <input type="password" name="password" minlength="3" value=""  required=""> </td> </tr>
+                           <tr> <td> <b> Password <sup class="asterisk">*</sup>: </b> </td>
+                               <td> <input class="field" type="password" name="password" minlength="4" > </td> </tr>
                            
-                           <tr> <td> <strong>Re-Enter your password<span><sup style="color: red">*</sup></span>: </strong></td>
-                               <td> <input type="password" name="password2" minlength="3"  value="" required="" > </td> </tr>
+                           <tr> <td> <strong>Re-Enter your password <sup class="asterisk">*</sup>: </strong></td>
+                               <td> <input class="field" type="password" name="password2" minlength="3" > </td> </tr>
 
          
                            <tr> <td> <b> Sex <sup class="asterisk">*</sup>: </b> <td>
-                                   <input type="radio" name="gender" value="male" id="male"> <b> Male </b> 
-                                   <input type="radio" name="gender" value="female" id="female"> <b> Female </b> </td> </tr>
+                                   <input class="field" type="radio" name="gender" value="male" id="male"> <b> Male </b> 
+                                   <input class="field" type="radio" name="gender" value="female" id="female"> <b> Female </b> </td> </tr>
                            
                            <tr> <td> <b> Occupation: </b> </td> 
-                               <td><select name="occupations" >
+                               <td><select  class="field" name="occupations" >
                                   <option value="student"  selected="selected" > Student </option>
                                   <option value="Teacher" > Teacher</option>
                                   <option value="Lawyer"> Lawyer</option>
@@ -68,18 +68,18 @@
                                    </select> </td> </tr>    
                 
                 
-                           <tr> <td> <b> Birth date<span><sup style="color: red">*</sup></span>: </b> </td>
-                               <td><input type="date"  name = "birthdate" value="" required> </td> </tr>
+                           <tr> <td> <b> Birth date <sup class="asterisk">*</sup>: </b> </td>
+                               <td><input class="field" type="date"  name = "birthdate" > </td> </tr>
                            
                            <tr> <td> <strong> By creating an account you agree to our </strong> </td>
                                <td> <strong> <a href="#">Terms & Privacy Policy </a> </strong> </td> </tr>
        
                            <tr> <td> <b> You are all set </b> </td>
                                
-                               <td> <input type="submit" value="Create my account"> </td> </tr>
+                               <td> <input class="field" type="submit" value="Create my account"> </td> </tr>
                            
                            <tr> <td> <b> Reset all the values </b> </td> 
-                               <td> <input type="reset" value="Reset"> </td> </tr>
+                               <td> <input class="field" type="reset" value="Reset"> </td> </tr>
                    </tbody>
                    
                    </table>
@@ -91,8 +91,8 @@
     
      <hr>
     
-        <p id="footer"> &#169; 2020 Unless explicitly stated otherwise <br> 
-            all material is copyright of Msusi Technologies Co. Ltd</p>  
+        <p id="footer"> &#169; 2020 Unless explicitly stated otherwise, <br> 
+            all material is copyright of Kunonu Technologies Co. Ltd</p>  
     
     </body>
 </html>

@@ -3,15 +3,15 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Digital Salon:Homepage</title>
+        <title> Digital Salon:Homepage </title>
         <link rel="stylesheet" href="pages/.css/styles.css" >
     </head>
     <body>
     <center>
         <?php
         
-        echo '<h1 class = "heading"> Welcome to digital salon management system<br>'
-        . ' Transforming the salon experience, one salon at a time.</h1>';    
+        echo '<h1 class = "heading"> Welcome to Nisuke <br> a digital salon management system <br> '
+        . ' Transforming the salon experience, one salon at a time </h1>';    
          ?>
         <div class="row">         
              
@@ -33,13 +33,32 @@
         
         </div>
        
-        <h4>Encountered a problem?<a href="#">Let us know.</a></h4>
+        <table class="mawasiliano"> <caption> <h3> Encountered a problem? Let us know </h3> </caption>
+            <tbody>
+                <tr> <td> <a href= " tel:+255 629 831 936 " > Tupigie </a> </td> 
+                    <td> <a href="https://api.whatsapp.com/send?phone=255629831936">
+                            <strong>Wasiliana nasi kirahisi zaidi kwa WhatsApp</strong> </a> </td></tr> 
+            <tr> <td><a href="sms:+255 629 831 936 ">
+                                <strong>Tutumie SMS sasa </strong> </a> </td>
+                                <td> <a href= " mailto:karibu@kunonu.tech " > 
+                                        <strong> Tutumie barua pepe </strong> </a> </td></tr> 
+            <tr> <td colspan="2" > <strong> Tutembelee </strong> <br>
+                            Chuo Kikuu Cha Dar es Salaam <br> 
+                            Ndaki ya Teknolojia Za Habari 
+                            <br> na Mawasiliano <br> </td> </tr>
+            
+            </tbody>
+            
+        </table>
     </center>
-    <hr>
-    <center>
-        <p id="footer"> &#169; 2020 Unless explicitly stated otherwise, <br>
-            all material is copyright of Msusi Technologies Co. Ltd</p>  
+    <footer id="footer" >
+       <center>
+        <p > &#169; 2020 <br> Unless explicitly stated otherwise, <br>
+            all material is copyright of <br>
+            <span class="brand"> Kunonu&#153; Technologies Co. Ltd </span> </p>  
     </center>
-   
+    
+    </footer>
+      
     </body>
 </html>

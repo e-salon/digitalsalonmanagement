@@ -8,6 +8,7 @@
     </head>
     <body>
          <p id="home"> <a href="../../../index.php" > Home </a> </p>
+         <p id="logout"> <a href="../../.html/.customer/customerSign-in.html"> Logout </a></p>
          <p class="viewconfirmation"> <a href="viewConfirmedbookings.php" > View confirmed bookings </a></p>
         
     <center>   
@@ -27,10 +28,7 @@ echo "<form id=\"form\" action=\"customer-bookingsProcessor.php\" method=\"post\
 . "<tr> <td>  </td> <td> <input type=\"hidden\" name=\"bookingConfirmed\" value=\"no\" > </td> </tr> <br> "
 . "<tr> <td> <strong> Reserve my spot </strong> </td> <td> <input type=\"submit\" name=\"confirmedSlot\" value=\"Reserve this time for me\"> </td> </tr>"       
 . "</tbody></table> </form>";
-            
-        
-        
-        
+         
         
 
 ?>

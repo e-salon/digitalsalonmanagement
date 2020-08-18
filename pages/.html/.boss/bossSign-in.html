@@ -4,7 +4,7 @@
         <title>Salon Manager Sign-in Form</title>
 
         <link rel="stylesheet" href="../../.css/styles.css" >
-        <!--<script src="../.js/formValidation.js"></script>-->
+        <script src="../.js/formValidation.js"></script>
         
             
     </head>
@@ -17,23 +17,23 @@
                 <h3 class="heading"> Welcome back <br>
                   Please sign in to view and manage your customer bookings </h3>
               
-              <aside>sections marked with <span><sup style="color: red">*</sup></span> are required </aside> 
-               
+              
             <form name="salonManager"  action="../../.php/.boss/bossAuthentication.php" method="post" onsubmit="return validateform()" >
-            
-                <table >
+            <table >
+                <caption>sections marked with <sup class="asterisk">*</sup> are required </caption> 
+               
                     <tbody>
-                        <tr> <td> <b> Mobile Number<span class="asterisk">*</span>: </b> </td>
-                            <td> <input type="tel" name="mobileNumber" value="" onkeyup="validateform();"> </td> </tr>
+                        <tr> <td> <b> Mobile Number <sup class="asterisk">*</sup>: </b> </td>
+                            <td> <input class="field" type="tel" name="mobileNumber" > </td> </tr>
 
                         <tr> <td> <b> Password<span class="asterisk">*</span>: </b> </td>
-                            <td>  <input type="password" name="password" value="" > </td> </tr>
+                            <td>  <input class="field" type="password" name="password" > </td> </tr>
               
                         <tr> <td> <b> Confirm your details and </b> </td>
-                            <td> <input type="submit" name="submit" value="Sign in"> </td> </tr>
+                            <td> <input class="field" type="submit" name="submit" value="Sign in"> </td> </tr>
                         
-                        <tr> <td>  <b> Please <input type="reset" value="Reset"> 
-                                    If you entered incorrect details </b> </td> </tr>
+                        <tr> <td>  <strong> Please <input class="field" type="reset" value="Reset"> </strong> </td>
+                                    <td> <strong> If you entered incorrect details </strong> </td> </tr>
             </tbody>
                 </table>
            
