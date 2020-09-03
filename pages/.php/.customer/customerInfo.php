@@ -15,7 +15,7 @@
  <?php
 include_once 'customerDatabaseConnection.php';
 $query="SELECT mobileNumber from mtejadata WHERE mobileNumber='$_POST[mobileNumber]'";
-$result= mysqli_query($connectionx, $query);
+$result= mysqli_query($connection, $query);
 $row = mysqli_num_rows($result);
 if($row>=1){
     echo "<p id=\"content\"> Mmmh!<br> This number is already registered.<br>"
@@ -32,7 +32,7 @@ $sql = "INSERT INTO MtejaData (firstName, lastName, mobileNumber, email, passwor
         . "'".$_POST['password']."','".$_POST['password2']."', "
         . "'".$_POST['gender']."','".$_POST['occupations']."','".$_POST['birthdate']."')";
 
-if ($connectionx->query($sql) === TRUE) {
+if ($connection->query($sql) === TRUE) {
   echo " <p id=\"content\" > Congratulations! <br>"
     . "You are successfully registered.<br> "
     ." Click here <a href=\"../../.html/.customer/customerSign-in.html\" > Log in</a> to log in</p> ";
@@ -41,7 +41,7 @@ else {
   echo "Error: " . $sql . "<br>" . $conn->error;
 }
  }
-$connectionx->close();
+$connection->close();
 
 ?>
         

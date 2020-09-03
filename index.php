@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="en">
+<html lang="en" dir="ltr">
     <head>
         <meta charset="UTF-8">
         <title> Digital Salon:Homepage </title>
@@ -51,14 +51,9 @@
             
         </table>
     </center>
-    <footer id="footer" >
-       <center>
-        <p > &#169; 2020 <br> Unless explicitly stated otherwise, <br>
-            all material is copyright of <br>
-            <span class="brand"> Kunonu&#153; Technologies Co. Ltd </span> </p>  
-    </center>
-    
-    </footer>
-      
+   
+      <?php
+         include_once 'footer.php';
+      ?>
     </body>
 </html>

@@ -11,7 +11,7 @@
 <center>
      <?php
     
-    include 'customerDatabaseConnection.php';
+    require_once 'DatabaseConnection.php';
 
 	if(isset($_POST["submit"])){
 		$mobileNumber = $_POST['mobileNumber'];
@@ -19,8 +19,10 @@
                 $_SESSION['customerMobileNumber'] = $mobileNumber;
                 $_SESSION['customerPassword'] = $password;
 
-		$query = "SELECT mobileNumber, password from mtejadata  WHERE mobileNumber = '$mobileNumber' AND password = '$password'";
-		$result = mysqli_query($connectionx, $query);
+		$query = "SELECT mobileNumber, password from mtejadata "
+                        . " WHERE mobileNumber = '$mobileNumber' AND "
+                        . "password = '$password'";
+		$result = mysqli_query($connection, $query);
 
 		$row = mysqli_num_rows($result);
                 

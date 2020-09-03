@@ -16,7 +16,7 @@
     <?php
 
 
-include '../.boss/bossDatabaseConnection.php';
+require_once 'DatabaseConnection.php';
 echo "<h3 class=\"heading\" >As a Nisuke member,you can browse your favorite <br> hair stylists and book a service for free.<br> <br> "
 
      . "Take a look at the following salons in our system </h3> <br>";
@@ -55,11 +55,11 @@ echo "<h3 class=\"heading\" >As a Nisuke member,you can browse your favorite <br
         
 $connection->close();
 
-
+include_once 'footer.php';
 ?>
         
         
-        <hr>
+      <!--  <hr>
     <footer>
         <p id="footer">
        
@@ -67,7 +67,8 @@ $connection->close();
             all material is copyright of Kunonu Technologies Co. Ltd
         </p>
         
-    </footer>
+    </footer>-->
+      
     </center>
 </body>
 </html>

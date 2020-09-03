@@ -15,7 +15,7 @@
         <center>
             
  <?php
-include_once 'bossDatabaseConnection.php';
+require_once 'DatabaseConnection.php';
 
 if(isset($_POST["submit"])){
 		$mobileNumber = $_POST['mobileNumber'];
@@ -25,7 +25,9 @@ if(isset($_POST["submit"])){
                 $_SESSION['bossPassword'] = $password;
 
 
-		$query = "SELECT mobileNumber, password from bossData  WHERE mobileNumber = '$mobileNumber' AND password = '$password'";
+		$query = "SELECT mobileNumber, password from bossData  WHERE"
+                        . " mobileNumber = '$mobileNumber' AND"
+                        . " password = '$password'";
 		$result = mysqli_query($connection, $query);
 
 		$row = mysqli_num_rows($result);
@@ -35,9 +37,11 @@ if(isset($_POST["submit"])){
 		}
                 
 		else{
-			echo "<p id=\"content\" > Either password or mobile number is  incorrect<br>"
+			echo "<p id=\"content\" > Either password or mobile"
+                    . " number is  incorrect<br>"
                     . "Please try again <br> "
-			." Please be sure you are using the details you used to sign-up </p>";
+			." Please be sure you are using the details you used to "
+                                . "sign-up </p>";
 			
 		}
 	}
