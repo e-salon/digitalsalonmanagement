@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+    <head>
+        <title>Customer Registration Form</title>
+
+       <script src="../.js/customerRegistrationValidation.js"></script>
+        <link rel="stylesheet" href="../../.css/styles.css" >
+        
+      
+    </head>
+
+    
+    <body>
+           <center>
+               
+                <p id="home"> <a href="../../../index.php" > Home</a> </p>
+               <div id="form">
+                   
+
+                   <h1 class="heading"> Experience a new beautiful way to locate and book to the best hairdressers in town <br> 
+                                        It begins with creating a Nisuke account<br></h1>               
+                   
+                 
+               <form name="customerRegistrationForm" action="../../.php/.customer/customerInfo.php"
+                      method="post" onsubmit="return validateform()" >
+    
+                   <table>
+                       <caption> <p> sections marked with <sup class="asterisk">*</sup> are required  </p> </caption>
+                      
+                       <tbody>
+                           <tr> <td > <strong> First name <sup class="asterisk">*</sup>: </strong></td>
+                               <td > <input class="field" type="text" name="firstName" > </td></tr>
+
+                           <tr> <td> <b> Last name <sup class="asterisk" >*</sup> : </b> </td>
+                               <td> <input class="field" type="text" name="lastName"  > </td> </tr>     
+        
+            
+                           <tr><td> <b> Mobile Number <sup class="asterisk">*</sup>: </b> </td>
+                               <td> <input class="field" type="tel" name="mobileNumber" > </td> </tr>
+
+                         
+                           <tr> <td> <b> Email: </b> </td>
+                               <td> <input class="field" type="email"  name="email" > </td> </tr>
+
+                           
+                           <tr> <td> <b> Password <sup class="asterisk">*</sup>: </b> </td>
+                               <td> <input class="field" type="password" name="password" minlength="4" > </td> </tr>
+                           
+                           <tr> <td> <strong>Re-Enter your password <sup class="asterisk">*</sup>: </strong></td>
+                               <td> <input class="field" type="password" name="password2" minlength="3" > </td> </tr>
+
+         
+                           <tr> <td> <b> Sex <sup class="asterisk">*</sup>: </b> <td>
+                                   <input class="field" type="radio" name="gender" value="male" id="male"> <b> Male </b> 
+                                   <input class="field" type="radio" name="gender" value="female" id="female"> <b> Female </b> </td> </tr>
+                           
+                           <tr> <td> <b> Occupation: </b> </td> 
+                               <td><select  class="field" name="occupations" >
+                                  <option value="student"  selected="selected" > Student </option>
+                                  <option value="Teacher" > Teacher</option>
+                                  <option value="Lawyer"> Lawyer</option>
+                                  <option value="Doctor"> Doctor</option>
+                                  <option value="Cooker"> Cooker</option>
+                                  <option value="Hair stylish"> Hair Stylish</option>
+                                  <option value="Business person">Business person</option>
+                                  <option value="Accountant">Accountant</option>
+                                  <option value="Driver">Driver</option>
+                                   </select> </td> </tr>    
+                
+                
+                           <tr> <td> <b> Birth date <sup class="asterisk">*</sup>: </b> </td>
+                               <td><input class="field" type="date"  name = "birthdate" > </td> </tr>
+                           
+                           <tr> <td> <strong> By creating an account you agree to our </strong> </td>
+                               <td> <strong> <a href="#">Terms & Privacy Policy </a> </strong> </td> </tr>
+       
+                           <tr> <td> <b> You are all set </b> </td>
+                               
+                               <td> <input class="field" type="submit" value="Create my account"> </td> </tr>
+                           
+                           <tr> <td> <b> Reset all the values </b> </td> 
+                               <td> <input class="field" type="reset" value="Reset"> </td> </tr>
+                   </tbody>
+                   
+                   </table>
+            </form>
+        
+           </div>
+         <p><b>Already have an account with us? <a href="customerSign-in.html">Sign in here</a></b></p>
+       </center>
+    
+     <hr>
+    
+        <p id="footer"> &#169; 2020 Unless explicitly stated otherwise, <br> 
+            all material is copyright of Kunonu Technologies Co. Ltd</p>  
+    
+    </body>
+</html>
+    
+
+
+
+

@@ -1,24 +1,34 @@
 
 
-
+.brand{ color: orangered;}
 html{
     background-color:darkgrey;
+    background-image: url(" ../../.images/IMG-20200806-WA0003.jpg" );
     }
     .heading{
         color: pink;
-        background-color:grey;
+       background-color:grey;
+        
     }
+    
+    body{text-align: center;
+    }
+    
+    #home{text-align: left;}
+    #logout{text-align: right;}
     
     #asterisk{
         color: red;
     }
     
     #form{
-                   background-color:grey;    
+                     
                    margin-top: 0pt;
                    margin-right:20%;
                    margin-bottom: 0px;
                    margin-left: 20%;
+                   background-color: grey;
+                   font-weight: bold;
           }
           
           .asterisk{
@@ -26,11 +36,14 @@ html{
           }
           #footer{
               background-color: grey;
+              float: bottom;
+              font-weight: bold;
           } 
           
     .column {
   float: left;
   width: 50%;
+  background-color: grey;
 }
 
 /* Clear floats after the columns */
@@ -40,6 +53,15 @@ html{
   clear: both;
 }
 
-#H-ruler{ width: 100%;
-         size:40px ;}
+
+
+#content{background-color: grey;
+   font-weight: bold;}
+
+.viewconfirmation{text-align: right;
+}
+
+.field{background-color: darkred;}
+.mawasiliano{border: 2.0px;
+padding: 40px;}
 
